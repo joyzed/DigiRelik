@@ -1,75 +1,28 @@
-body {
-  font-family: sans-serif;
-  background: #0d0d0d;
-  color: #eee;
-  margin: 0;
-  padding: 0;
-}
+body { font-family: 'Segoe UI', sans-serif; background: #0d0d0d; color: #eee; margin: 0; padding: 0; }
 
-header {
-  background: #111;
-  padding: 1rem;
-  border-bottom: 1px solid #333;
-  text-align: center;
-}
+header { background: #111; padding: 1rem; border-bottom: 1px solid #333; text-align: center; }
 
-.site-title {
-  margin: 0;
-  color: #00ffee;
-}
+.site-title { margin: 0; color: #00ffee; font-size: 2rem; }
 
-.menu {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
+.menu { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
 
-.menu a {
-  color: #eee;
-  text-decoration: none;
-  font-weight: bold;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s;
-}
+.menu-box { border: 2px solid #00ffee; color: #00ffee; padding: 0.5rem 1.2rem; border-radius: 10px; cursor: pointer; font-weight: bold; transition: all 0.3s ease; background: transparent; }
 
-.menu a:hover {
-  border-color: #00ffee;
-}
+.menu-box:hover { background: #00ffee; color: #111; transform: scale(1.05); }
 
-.section {
-  display: none;
-  padding: 2rem;
-}
+.menu-box.active { background: #00ffee; color: #111; }
 
-.section.active {
-  display: block;
-}
+.section { display: none; padding: 2rem 1rem; min-height: 60vh; animation: fadeIn 0.5s ease; }
 
-#artifact-list {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
+.section.active { display: block; }
 
-.artifact {
-  background: #1a1a1a;
-  border: 1px solid #333;
-  padding: 1rem;
-  border-radius: 10px;
-  text-align: center;
-}
+#artifact-list { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 
-.artifact img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 0.5rem;
-}
+.artifact { background: #1a1a1a; border: 1px solid #333; padding: 1rem; border-radius: 10px; text-align: center; }
 
-footer {
-  background: #111;
-  text-align: center;
-  padding: 1rem;
-  border-top: 1px solid #333;
-}
+.artifact img { width: 100%; border-radius: 8px; margin-bottom: 0.5rem; }
+
+footer { background: #111; text-align: center; padding: 1rem; border-top: 1px solid #333; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
