@@ -3,19 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hexekta – Artefact</title>
+  <title>Hexekta – Galerie</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1 class="site-title">Hexekta</h1>
-    <a href="hexekta.html">← Retour à la galerie</a>
+    <h2 class="slogan">Les artefacts du futur ont une mémoire</h2>
   </header>
 
   <main>
-    <section class="artifact-detail" id="artifact-detail">
-      <h2>Chargement...</h2>
-    </section>
+    <div id="hexekta-gallery" class="artifact-grid"></div>
   </main>
 
   <footer>
@@ -23,28 +21,23 @@
   </footer>
 
   <script>
-    const params = new URLSearchParams(window.location.search);
-    const id = parseInt(params.get('id'));
-
     fetch('data.json')
       .then(response => response.json())
       .then(data => {
-        const artifact = data[id - 1];
-        const container = document.getElementById('artifact-detail');
-
-        if (!artifact) {
-          container.innerHTML = '<p>Artefact non trouvé.</p>';
-          return;
-        }
-
-        container.innerHTML = `
-          <h2>Artefact ${id} : ${artifact.nom}</h2>
-          <img src="artefact${id}.jpg" alt="Artefact ${id}" class="artifact-image">
-          <p>${artifact.description}</p>
-        `;
+        const gallery = document.getElementById('hexekta-gallery');
+        data.forEach((item, index) => {
+          const box = document.createElement('div');
+          box.className = 'artifact-box';
+          const id = index + 1;
+          box.innerHTML = `
+            <h3><a href="art.html?id=${id}">${item.nom}</a></h3>
+            <p>${item.description}</p>
+          `;
+          gallery.appendChild(box);
+        });
       })
       .catch(error => {
-        document.getElementById('artifact-detail').innerHTML = '<p>Erreur lors du chargement des données.</p>';
+        document.getElementById('hexekta-gallery').innerHTML = '<p>Erreur lors du chargement des artefacts.</p>';
         console.error(error);
       });
   </script>
