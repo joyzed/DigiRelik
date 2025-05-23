@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: sans-serif;
   background: #0d0d0d;
   color: #eee;
   margin: 0;
@@ -21,32 +21,26 @@ header {
 .menu {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
   margin-top: 1rem;
 }
 
-.menu-box {
-  background: #111;
-  border: 2px solid #00ffee;
-  color: #00ffee;
-  padding: 0.5rem 1.2rem;
-  border-radius: 10px;
-  cursor: pointer;
+.menu a {
+  color: #eee;
+  text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s, color 0.3s, transform 0.2s;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
 }
 
-.menu-box:hover {
-  background: #00ffee;
-  color: #111;
-  transform: scale(1.05);
+.menu a:hover {
+  border-color: #00ffee;
 }
 
 .section {
   display: none;
   padding: 2rem;
-  animation: fadeIn 0.5s ease;
 }
 
 .section.active {
@@ -68,4 +62,14 @@ header {
 }
 
 .artifact img {
-  width:
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #333;
+}
