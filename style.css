@@ -1,4 +1,4 @@
-8body { font-family: 'Segoe UI', sans-serif; background: #0d0d0d; color: #eee; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; background: #0d0d0d; color: #eee; margin: 0; padding: 0; }
 
 header { background: #111; padding: 1rem; border-bottom: 1px solid #333; text-align: center; }
 
@@ -49,3 +49,20 @@ footer { background: #111; text-align: center; padding: 1rem; border-top: 1px so
   min-width: 200px;
 }
 
+.artifact-detail {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.artifact-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
+}
