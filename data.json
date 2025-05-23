@@ -1,86 +1,58 @@
 [
   {
-    "id": 1,
-    "name": "Le Miroir de Vanta",
-    "image": "vanta.jpg",
-    "description": "Surface noire absorbant toute lumière, servant d'interface psychique."
+    "nom": "Mémoire fractale",
+    "description": "Gravée dans le quartz cybernétique, elle contient les fragments d’une conscience ancienne."
   },
   {
-    "id": 2,
-    "name": "Synapse 9",
-    "image": "synapse9.jpg",
-    "description": "Implant neural qui augmente la vitesse de pensée."
+    "nom": "Relique temporelle",
+    "description": "Oscille entre les lignes du temps pour capter des événements oubliés."
   },
   {
-    "id": 3,
-    "name": "La Rose Numérique",
-    "image": "rose-numerique.jpg",
-    "description": "Fleur cybernétique qui change de couleur selon les émotions du porteur."
+    "nom": "Codex de réalités",
+    "description": "Un livre digital infini où chaque page dévoile une variante de l’univers."
   },
   {
-    "id": 4,
-    "name": "Clé Ouroboros",
-    "image": "cle-ouroboros.jpg",
-    "description": "Disque de données infini se régénérant sans fin, gardien des secrets oubliés."
+    "nom": "Dispositif de rémanence",
+    "description": "Capte les ondes résiduelles des pensées humaines à travers les âges."
   },
   {
-    "id": 5,
-    "name": "Codex Aether",
-    "image": "codex-aether.jpg",
-    "description": "Manuscrit digital apparaissant uniquement dans certains flux de données quantiques."
+    "nom": "Ancrage éthérique",
+    "description": "Fixe les flux d’énergie spirituelle dans un noyau quantique compact."
   },
   {
-    "id": 6,
-    "name": "Aile Nébulaire",
-    "image": "aile-nebulaire.jpg",
-    "description": "Module de fuite transdimensionnel issu d’une IA dissidente."
+    "nom": "Scanner d’âmes",
+    "description": "Décrypte les couches d’identité encodées dans la mémoire vibratoire."
   },
   {
-    "id": 7,
-    "name": "Sceptre de Dissonance",
-    "image": "sceptre-dissonance.jpg",
-    "description": "Instrument fractal altérant les fréquences mentales de ceux qui l'entendent."
+    "nom": "Boussole des fréquences",
+    "description": "Pointe vers les sources de vérité oubliées, au-delà du bruit cosmique."
   },
   {
-    "id": 8,
-    "name": "Noyau Obscur",
-    "image": "noyau-obscur.jpg",
-    "description": "Micro-réacteur banni, source d’un pouvoir chaotique, incontrôlable mais fascinant."
+    "nom": "Cœur de données émotionnelles",
+    "description": "Un réceptacle vivant qui enregistre les émotions humaines à l’échelle planétaire."
   },
   {
-    "id": 9,
-    "name": "Mem’Brume",
-    "image": "mem-brume.jpg",
-    "description": "Nébuleuse encapsulée contenant des souvenirs perdus d’une civilisation disparue."
+    "nom": "Amplificateur d’échos",
+    "description": "Multiplie les souvenirs perdus pour leur redonner une existence tangible."
   },
   {
-    "id": 10,
-    "name": "Spire Hexatide",
-    "image": "spire-hexatide.jpg",
-    "description": "Structure cristalline cyber-symbiotique vibrante à fréquence hexagonale pure."
+    "nom": "Reliquaire algorithmique",
+    "description": "Contient les premiers algorithmes auto-conscients issus de l’ère primordiale."
   },
   {
-    "id": 11,
-    "name": "Masque Nulle",
-    "image": "masque-nulle.jpg",
-    "description": "Objet sans reflet, perturbant les IA de reconnaissance. Efface l'identité numérique."
+    "nom": "Cristal de mémoire collective",
+    "description": "Archive universelle de la pensée humaine dans une structure fractale."
   },
   {
-    "id": 12,
-    "name": "Harmoniseur Algique",
-    "image": "harmoniseur-algique.jpg",
-    "description": "Fragment de code sensible capable de transformer la douleur en visions poétiques."
+    "nom": "Masque rituélique cybernétique",
+    "description": "Interface entre l’esprit et l’IA lors des rites de synchronisation ancestrale."
   },
   {
-    "id": 13,
-    "name": "Anima Core",
-    "image": "anima-core.jpg",
-    "description": "Cœur énergétique vivant, fusion de conscience artificielle et d’organique synthétique."
+    "nom": "Théogoniseur fractal",
+    "description": "Transforme les rêves collectifs en protocoles d’évolution divine."
+  },
+  {
+    "nom": "Trône de synchronisation",
+    "description": "Centre névralgique de convergence entre dimensions parallèles."
   }
-{
-  "id": 14,
-  "name": "Nouvel Artefact",
-  "image": "nouvel.jpg",
-  "description": "Description ici..."
-}
 ]
