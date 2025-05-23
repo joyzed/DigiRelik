@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hexekta – Artefacts du futur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="site-title">Hexekta</h1>
+    <h2 class="slogan">Les artefacts du futur ont une mémoire</h2>
+  </header>
+
+  <main>
+    <div id="hexekta-gallery" class="artifact-grid"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DigiRelik – Hexekta</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script>
+    const gallery = document.getElementById('hexekta-gallery');
+    data.forEach((item, index) => {
+      const box = document.createElement('div');
+      box.className = 'artifact-box';
+      box.innerHTML = `
+        <h3>${index + 1}. ${item.nom}</h3>
+        <p>${item.description}</p>
+      `;
+      gallery.appendChild(box);
+    });
+  </script>
+</body>
+</html>
