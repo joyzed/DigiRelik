@@ -6,13 +6,36 @@ body {
   padding: 0;
 }
 
-header, footer {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #111;
-  padding: 1rem;
-  text-align: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #333;
 }
 
-#gallery {
+header .logo h1 {
+  margin: 0;
+  color: #00ffee;
+}
+
+nav a {
+  color: #eee;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00ffee;
+}
+
+section {
   padding: 2rem;
 }
 
@@ -27,4 +50,11 @@ header, footer {
 .artifact img {
   max-width: 100%;
   border-radius: 4px;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #333;
 }
