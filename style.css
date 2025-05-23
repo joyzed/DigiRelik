@@ -25,3 +25,40 @@ header { background: #111; padding: 1rem; border-bottom: 1px solid #333; text-al
 footer { background: #111; text-align: center; padding: 1rem; border-top: 1px solid #333; }
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 0 10px #00ffee33;
+}
+
+.project-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto 1rem auto;
+  display: block;
+  border: 1px solid #00ffee22;
+}
+
+.project-description {
+  color: #eee;
+}
+
+.project-description h3 {
+  margin: 0 0 0.5rem 0;
+  color: #00ffee;
+}
+
+.project-description p {
+  margin: 0;
+  line-height: 1.5;
+  color: #ccc;
+}
