@@ -1,43 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>DigiRelik – Hexekta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DigiRelik – The artifacts of the future hold memories</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="logo">
+      <img src="logo.svg" alt="DigiRelik Logo">
       <h1>DigiRelik</h1>
     </div>
     <nav>
-      <a href="#gallery">Galerie</a>
-      <a href="#about">À propos</a>
-      <a href="#contact">Contact</a>
+      <button onclick="showSection('home')">Accueil</button>
+      <button onclick="showSection('hexekta')">Hexekta</button>
+      <button onclick="showSection('nfts')">Artefacts</button>
+      <button onclick="showSection('about')">À propos</button>
+      <button onclick="showSection('contact')">Contact</button>
     </nav>
   </header>
 
   <main>
-    <section id="gallery">
-      <h2>Cybernetic Artifacts</h2>
-      <div id="artifact-list"></div>
+    <section id="home" class="content-section">
+      <h2>Bienvenue sur DigiRelik</h2>
+      <p>Un univers où chaque artefact numérique renferme une mémoire, une énigme, un fragment de récit codé.</p>
     </section>
 
-    <section id="about">
-      <h2>À propos du projet</h2>
-      <p>Hexekta est une collection d'artefacts cybernétiques, chacun porteur d’une mémoire et d’une histoire.</p>
+    <section id="hexekta" class="content-section" style="display:none;">
+      <h2>Hexekta – A Digital Story</h2>
+      <p>Plongez dans l’histoire des 13 artefacts cybernétiques, aux pouvoirs symboliques et mémoires fractales...</p>
     </section>
 
-    <section id="contact">
+    <section id="nfts" class="content-section" style="display:none;">
+      <h2>Les artefacts numériques</h2>
+      <div id="nft-list">Chargement des artefacts...</div>
+    </section>
+
+    <section id="about" class="content-section" style="display:none;">
+      <h2>À propos</h2>
+      <p>DigiRelik est un projet initié par Jean-Yves Cornet, mêlant art numérique, ésotérisme et narration cybernétique.</p>
+    </section>
+
+    <section id="contact" class="content-section" style="display:none;">
       <h2>Contact</h2>
-      <p>Email : <a href="mailto:jyc.joyz@gmail.com">jyc.joyz@gmail.com</a></p>
+      <p>Pour toute question ou collaboration : <a href="mailto:jyc.joyz@gmail.com">jyc.joyz@gmail.com</a></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 DigiRelik</p>
+    <p>&copy; 2025 DigiRelik – The artifacts of the future hold memories.</p>
   </footer>
 
-  <script src="artefacts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
