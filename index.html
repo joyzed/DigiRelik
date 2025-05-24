@@ -1,49 +1,61 @@
-<!DOCTYPE html><html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DigiRelik – V1.1</title>
+  <title>DigiRelik – Accueil</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="option.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <h1 class="site-title">DigiRelik</h1>
     <nav class="menu">
-      <div class="menu-box" onclick="showSection('home')">Accueil</div>
-      <div class="menu-box" onclick="showSection('projects')">Projets</div>
-      <div class="menu-box" onclick="showSection('about')">À propos</div>
-      <div class="menu-box" onclick="showSection('contact')">Contact</div>
+      <div class="menu-box active" data-section="home">Accueil</div>
+      <div class="menu-box" data-section="projects">Projets</div>
+      <div class="menu-box" data-section="about">À propos</div>
+      <div class="menu-box" data-section="contact">Contact</div>
     </nav>
-  </header>  <main>
+  </header>
+  <main>
     <section id="home" class="section active">
       <h2>Bienvenue sur DigiRelik</h2>
       <p>Une vitrine cyber-ésotérique de collections numériques symboliques et fractales. Explorez l’univers d’artefacts conçus comme des fragments de mémoire encodée.</p>
-    </section><section id="projects" class="section">
-  <h2>Nos Projets</h2>
-  <div class="project-box">
-    <img src="hexekta.jpg" alt="Hexekta" class="project-img">
-    <div class="project-description">
-      <h3>Hexekta</h3>
-      <p>Une collection d’artefacts fractals où chaque NFT est une relique cybernétique. Galerie disponible ci-dessous.</p>
-      <p><a href="hexekta.html">→ Explorer la galerie Hexekta</a></p>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="section">
-  <h2>À propos</h2>
-  <p>DigiRelik est un projet belge indépendant dédié à la mise en lumière d'artefacts numériques aux dimensions symboliques, historiques et fictionnelles. Chaque projet raconte une histoire, chaque NFT est une mémoire.</p>
-</section>
-
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Pour toute collaboration ou information : <a href="mailto:jyc.joyz@gmail.com">jyc.joyz@gmail.com</a></p>
-</section>
-
-  </main>  <footer>
+    </section>
+    <section id="projects" class="section">
+      <h2>Nos Projets</h2>
+      <div class="project-box">
+        <img src="hexekta.jpg" alt="Hexekta" class="project-img">
+        <div class="project-description">
+          <h3>Hexekta</h3>
+          <p>Une collection d’artefacts fractals où chaque NFT est une relique cybernétique.</p>
+          <p><a href="hexekta.html">→ Explorer la galerie Hexekta</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section">
+      <h2>À propos</h2>
+      <p>DigiRelik est un projet belge indépendant dédié à la mise en lumière d'artefacts numériques aux dimensions symboliques, historiques et fictionnelles. Chaque projet raconte une histoire, chaque NFT est une mémoire.</p>
+    </section>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Pour toute collaboration ou information : <a href="mailto:jyc.joyz@gmail.com">jyc.joyz@gmail.com</a></p>
+    </section>
+  </main>
+  <footer>
     <p>&copy; 2025 DigiRelik – Tous droits réservés.</p>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.menu-box').forEach(box => {
+        box.addEventListener('click', function() {
+          document.querySelectorAll('.menu-box').forEach(b => b.classList.remove('active'));
+          document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+          this.classList.add('active');
+          document.getElementById(this.dataset.section).classList.add('active');
+        });
+      });
+    });
+  </script>
 </body>
 </html>
