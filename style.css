@@ -1,49 +1,69 @@
-/* style.css – v3.0.0 – 24/05/2025 22:00:00 – Thème complet DigiRelik */
+/* style.css – v1.0.1 – 24/05/2025 17:12:00
+   changelog :
+   - ajout menu horizontal centré
+   - ajout sous-menu déroulant CSS-only pour "About"
+*/
+
 body {
   margin: 0;
-  font-family: 'Orbitron', sans-serif;
+  padding: 0;
+  font-family: Arial, sans-serif;
   background-color: #000;
   color: #00ffff;
 }
-header {
-  background: #111;
-  padding: 1rem;
-  text-align: center;
+
+#hd, #mn, #ct, #ft {
+  padding: 20px;
+  border-bottom: 1px solid #00ffff;
 }
-.logo {
-  font-size: 2rem;
+
+#ft {
+  border-top: 1px solid #00ffff;
+  border-bottom: none;
 }
+
+/* Menu */
 .menu ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  margin: 0;
   padding: 0;
-  margin: 1rem 0;
+  text-align: center;
 }
-.menu a {
+
+.menu ul li {
+  display: inline-block;
+  position: relative;
+  margin: 0 20px;
+}
+
+.menu ul li a {
   text-decoration: none;
   color: #00ffff;
-  transition: 0.3s;
-}
-.menu a:hover {
-  color: #fff;
-}
-.section {
-  display: none;
-  padding: 2rem;
-  animation: fadeIn 0.5s ease-in;
-}
-.section.active {
+  padding: 8px 12px;
   display: block;
+  transition: background-color 0.3s ease;
 }
-footer {
-  background: #111;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+
+.menu ul li a:hover {
+  background-color: #004444;
 }
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+
+/* Sous-menu */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #001111;
+  min-width: 140px;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+.submenu li {
+  display: block;
+  margin: 0;
+}
+
+.menu ul li:hover .submenu {
+  display: block;
 }

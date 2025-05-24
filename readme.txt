@@ -1,35 +1,38 @@
-DigiRelik – Version 1.0.1.3
-===========================
+SimplyV1 – Version 1.0.1
+=========================
 
-Date : 24/05/2025 16:07:01
+Créateur : Jean-Yves Cornet
+Date : 24 mai 2025
 
-Objectifs :
-- Uniformisation et enrichissement du fichier col.json
-  → Structure alignée avec data.json
-  → Ajout des 6 collections NFT officielles (Hexekta + 5 nouvelles)
-  → Ajout du champ "drkid" calculé automatiquement
+Description :
+--------------
+SimplyV1 est une base de développement web ultra légère, basée sur HTML, CSS et JS.
+Elle sert de template minimaliste pour initier rapidement un projet web.
 
-- Mise à jour de data.json
-  → Ajout du champ "code": "DCT" pour tous les artefacts
-  → Ajout du champ "drkid" (valeurs de 101 à 114)
+Structure :
+-----------
+- index.html : structure HTML avec header, menu, contenu et footer
+- style.css : thème sombre Digirelikv1.0, menu centré et sous-menu CSS only
+- script.js : fichier JS central prêt pour intégration
+- img/ : dossier réservé aux images
+- readme.txt : ce fichier
 
-- Mises à jour HTML
-  → hexekta.html : chargement dynamique des artefacts depuis data.json
-  → art.html : affichage dynamique du détail d’un artefact via ?id=
-  → Nettoyage complet et conformité avec la structure du site
+Identifiants :
+--------------
+Les ID HTML `#hd`, `#mn`, `#ct`, `#ft` sont fixes et NE DOIVENT JAMAIS être modifiés.
 
-- JavaScript (script.js)
-  → Fonction de chargement des artefacts depuis data.json
-  → Intégration dynamique sur hexekta.html et art.html
-  → Fonction showSection() conservée
+Versions :
+----------
+- v1.0.0 : structure de base
+- v1.0.1 : ajout menu centré, sous-menu CSS-only, changelog intégré
 
-Fichiers modifiés :
-- data.json
-- col.json
-- hexekta.html
-- art.html
-- script.js
-- readme.txt
+Utilisation :
+-------------
+1. Dézippez l’archive
+2. Ajoutez vos contenus dans `#ct`
+3. Développez vos scripts dans `script.js`
+4. Ajoutez vos images dans le dossier `img/`
 
-Version précédente : v1.0.1.2
-Version actuelle : v1.0.1.3
+Licence :
+---------
+Libre d’usage personnel ou projet prototypé. Mention du créateur appréciée : Jean-Yves Cornet.
