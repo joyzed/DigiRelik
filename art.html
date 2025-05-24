@@ -5,24 +5,163 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hexekta – Détail Artefact</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="option.css" />
-  <script defer src="script.js"></script>
+  <style>
+    body {
+      background: #0a0a0a;
+      color: #00ffff;
+      font-family: 'Orbitron', sans-serif;
+      margin: 0; padding: 20px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header, footer {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    main#artefact-detail {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      background: #111;
+      border: 1px solid #00ffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .art-image {
+      max-width: 320px;
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 0 12px #00ffff;
+      flex: 1 1 300px;
+    }
+    .art-details {
+      flex: 2 1 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .art-details h2 {
+      margin: 0;
+      font-size: 2rem;
+      color: #00ffff;
+      text-align: center;
+    }
+    .art-description {
+      font-size: 1.1rem;
+      line-height: 1.4;
+      text-align: justify;
+      color: #c0ffff;
+      flex-grow: 1;
+    }
+    .art-price {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #55ffff;
+      text-align: center;
+    }
+    .buy-btn {
+      background-color: #00ffff;
+      color: #0a0a0a;
+      font-weight: 700;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.1rem;
+      text-align: center;
+      text-decoration: none;
+      max-width: 200px;
+      margin: 0 auto;
+      display: block;
+      transition: background-color 0.3s;
+      border: none;
+    }
+    .buy-btn:hover {
+      background-color: #00bbbb;
+      text-decoration: none;
+    }
+    #qrcode {
+      margin: 20px auto 0 auto;
+      display: block;
+      max-width: 150px;
+    }
+    @media (max-width: 720px) {
+      main#artefact-detail {
+        flex-direction: column;
+      }
+      .art-image, .art-details {
+        flex: none;
+        max-width: 100%;
+      }
+      .buy-btn {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Hexekta – Détail Artefact</h1>
-    <p><a href="hexekta.html">← Retour à la galerie</a></p>
+    <p><a href="hexekta.html">← Retour à la liste</a></p>
   </header>
 
-  <main>
-    <section id="artefact-detail" class="artefact-detail-card">
-      <!-- Contenu injecté par script.js -->
-      Chargement...
-    </section>
+  <main id="artefact-detail">
+    Chargement...
   </main>
 
   <footer>
     <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script>
+    async function loadArtefact() {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id') || 0;
+
+      try {
+        const response = await fetch('data.json');
+        const data = await response.json();
+
+        const art = data[id] || data[0];
+        const container = document.getElementById('artefact-detail');
+
+        container.innerHTML = `
+          <img src="${art.image}" alt="${art.name}" class="art-image" />
+          <div class="art-details">
+            <h2>${art.name}</h2>
+            <p class="art-description">${art.description}</p>
+            <p class="art-price">Prix : ${art.price}</p>
+            <a href="${art.mintUrl}" target="_blank" rel="noopener noreferrer" class="buy-btn">Acheter</a>
+            <canvas id="qrcode"></canvas>
+          </div>
+        `;
+
+        const qrCanvas = document.getElementById('qrcode');
+        QRCode.toCanvas(qrCanvas, art.mintUrl, { width: 150 }, (error) => {
+          if (error) console.error(error);
+        });
+      } catch (err) {
+        document.getElementById('artefact-detail').textContent = 'Erreur de chargement des données.';
+        console.error(err);
+      }
+    }
+
+    loadArtefact();
+  </script>
 </body>
 </html>
