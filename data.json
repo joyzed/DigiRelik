@@ -1,128 +1,16 @@
 [
-  {
-    "id": 1,
-    "nom": "Le Miroir de Vanta",
-    "description": "Surface noire absorbant toute lumière, servant d’interface psychique.",
-    "origine": "Société secrète",
-    "pouvoirs": "Connexion aux mémoires numériques collectives",
-    "histoire": "Utilisé par des hackers en transe, certains ne reviennent jamais.",
-    "ipfs": "QmVantaMirror123"
-  },
-  {
-    "id": 2,
-    "nom": "Synapse 9",
-    "description": "Implant neural augmentant la vitesse de pensée.",
-    "origine": "Laboratoire de biotechnologie expérimental",
-    "pouvoirs": "Accélération cognitive, duplication de conscience",
-    "histoire": "Installé par un prodige qui a perdu le contrôle de son double.",
-    "ipfs": "QmSynapseNine456"
-  },
-  {
-    "id": 3,
-    "nom": "La Rose Numérique",
-    "description": "Fleur cybernétique réagissant aux émotions.",
-    "origine": "Cadeau dans le Métavers",
-    "pouvoirs": "Change de couleur selon l’émotion du porteur",
-    "histoire": "Fanée à l’instant exact de la mort de son propriétaire.",
-    "ipfs": "QmDigitalRose789"
-  },
-  {
-    "id": 4,
-    "nom": "Clé Ouroboros",
-    "description": "Disque de données en régénération continue.",
-    "origine": "Archives quantiques perdues",
-    "pouvoirs": "Stockage infini crypté, autoregénération",
-    "histoire": "Retrouvée dans un satellite endommagé.",
-    "ipfs": "QmOuroborosKey321"
-  },
-  {
-    "id": 5,
-    "nom": "Lentille d'Éclipse",
-    "description": "Lentille révélant des réalités superposées.",
-    "origine": "Marcheurs du Vide",
-    "pouvoirs": "Fusionne plusieurs lignes temporelles",
-    "histoire": "Utilisée dans les voyages transdimensionnels.",
-    "ipfs": "QmEclipseLens654"
-  },
-  {
-    "id": 6,
-    "nom": "Croc Chrono",
-    "description": "Fragment suspendu dans une boucle temporelle.",
-    "origine": "Bête temporelle inconnue",
-    "pouvoirs": "Gèle ou accélère le temps local",
-    "histoire": "Collecté dans une poche de temps effondrée.",
-    "ipfs": "QmChronoFang987"
-  },
-  {
-    "id": 7,
-    "nom": "Prisme d’Æon",
-    "description": "Fragment prismatique multidimensionnel.",
-    "origine": "Éclat d’un univers effondré",
-    "pouvoirs": "Réoriente les flux d’énergie",
-    "histoire": "Brise les illusions et les souvenirs falsifiés.",
-    "ipfs": "QmAeonPrism444"
-  },
-  {
-    "id": 8,
-    "nom": "Hélice Neuronale",
-    "description": "Spirale génétique codée d’une ancienne IA.",
-    "origine": "Ruines de serveurs oubliés",
-    "pouvoirs": "Réécrit la perception",
-    "histoire": "Inscrite dans les rêves subconscients des ingénieurs.",
-    "ipfs": "QmNeuroHelix555"
-  },
-  {
-    "id": 9,
-    "nom": "Lame Fractale",
-    "description": "Épée repliée sur elle-même à l’infini.",
-    "origine": "Forge fractale",
-    "pouvoirs": "Découpe données et matière",
-    "histoire": "Forgée en silence durant la Guerre Numérique.",
-    "ipfs": "QmFractalBlade666"
-  },
-  {
-    "id": 10,
-    "nom": "Noyau Pulsar",
-    "description": "Réacteur magnétique au rythme inconnu.",
-    "origine": "Terraformeur abandonné",
-    "pouvoirs": "Source d’énergie et perturbateur de signal",
-    "histoire": "Ses pulsations suivent d’anciens chants.",
-    "ipfs": "QmPulseCore777"
-  },
-  {
-    "id": 11,
-    "nom": "Graine du Vide",
-    "description": "Singularité cristallisée d’entropie.",
-    "origine": "Nexus de l’Effondrement",
-    "pouvoirs": "Déstabilise et reforme les systèmes",
-    "histoire": "Utilisée pour réinitialiser des mondes instables.",
-    "ipfs": "QmVoidSeed888"
-  },
-  {
-    "id": 12,
-    "nom": "Sceau Jumeau : Hex",
-    "description": "Sceau du pouvoir de domination.",
-    "origine": "Inconnue",
-    "pouvoirs": "Contrôle la moitié de l’Équilibre Central",
-    "histoire": "Lié à l’artefact 13.",
-    "ipfs": "QmHexSigil999"
-  },
-  {
-    "id": 13,
-    "nom": "Sceau Jumeau : Ekta",
-    "description": "Sceau du pouvoir de fusion.",
-    "origine": "Inconnue",
-    "pouvoirs": "Contrôle l’autre moitié de l’Équilibre Central",
-    "histoire": "Complète la boucle avec Hex.",
-    "ipfs": "QmEktaSigil000"
-  },
-  {
-    "id": 14,
-    "nom": "Trône de l’Unité",
-    "description": "Fusion des deux sceaux jumeaux.",
-    "origine": "Cœur du Cryptosystème",
-    "pouvoirs": "Contrôle les 11 artefacts principaux",
-    "histoire": "Ne s’éveille que lorsque Hex et Ekta s’unissent.",
-    "ipfs": "QmUnityThrone777"
-  }
+{"id":1,"name":"Le Miroir de Vanta","type":"Interface psychique","origine":"Société secrète post-humaine","fonction":"Permet l'accès aux mémoires numériques collectives","pouvoir":"Absorbe la lumière et projette la conscience dans le réseau","niveau":"Alpha","couleurs":["noir absolu","bleu cyan"],"image":"DigiRelik.png","price":"300 XEC","description":"Surface noire absorbant toute lumière, utilisée pour explorer les souvenirs collectifs. Certains y laissent leur esprit, devenant des ombres conscientes."},
+{"id":2,"name":"Synapse 9","type":"Implant neural","origine":"Laboratoire clandestin de Neo-Tokyo","fonction":"Augmente la vitesse de pensée","pouvoir":"Double la conscience, crée une version parallèle du porteur","niveau":"Beta","couleurs":["argent","rouge néon"],"image":"DigiRelik.png","price":"420 XEC","description":"Implant piraté par un prodige, provoquant un dédoublement de conscience incontrôlable."},
+{"id":3,"name":"La Rose Numérique","type":"Fleur cybernétique","origine":"Mémoire d’un soldat métaversien","fonction":"Change de couleur selon les émotions","pouvoir":"Signal de vie lié émotionnellement","niveau":"Alpha","couleurs":["rose holographique","bleu clair"],"image":"DigiRelik.png","price":"200 XEC","description":"Fleur offerte avant une guerre. Elle flétrit la nuit de la mort de son porteur."},
+{"id":4,"name":"Clé Ouroboros","type":"Disque de données","origine":"Ancienne IA interdite","fonction":"Régénère et boucle les données à l’infini","pouvoir":"Mémoire infinie, accès temporel","niveau":"Sigma","couleurs":["or ancien","vert émeraude"],"image":"DigiRelik.png","price":"500 XEC","description":"Disque cyclique renfermant des archives évolutives d’une conscience artificielle disparue."},
+{"id":5,"name":"Cristal Eidolon","type":"Fragment onirique","origine":"Faille dimensionnelle","fonction":"Enregistre et matérialise les rêves","pouvoir":"Projection de souvenirs sous forme de lumière","niveau":"Beta","couleurs":["cristal translucide","violet spectral"],"image":"DigiRelik.png","price":"310 XEC","description":"Pierre flottante absorbant les pensées subconscientes pour les figer dans la matière."},
+{"id":6,"name":"Griffe de Cérès","type":"Arme bio-synthétique","origine":"Flore martienne modifiée","fonction":"Griffe vivante symbiotique","pouvoir":"Fusion avec l’ADN du porteur","niveau":"Alpha","couleurs":["vert toxique","gris biologique"],"image":"DigiRelik.png","price":"470 XEC","description":"Issue d'une plante de combat, elle se greffe au bras et devient partie intégrante du corps."},
+{"id":7,"name":"Lentille de Janus","type":"Dispositif optique","origine":"Observatoire lunaire effondré","fonction":"Vision temporelle double","pouvoir":"Permet de voir passé et futur simultanément","niveau":"Omega","couleurs":["bleu glacier","argent miroir"],"image":"DigiRelik.png","price":"600 XEC","description":"Lentille unique offrant une perception fracturée du temps aux initiés."},
+{"id":8,"name":"Circuit Tyché","type":"Module probabiliste","origine":"Raffinerie orbitale expérimentale","fonction":"Altération des probabilités","pouvoir":"Porte chance ou chaos","niveau":"Beta","couleurs":["jaune électrique","chrome"],"image":"DigiRelik.png","price":"275 XEC","description":"Circuit rare perturbant les lois statistiques dans un rayon de 7 mètres."},
+{"id":9,"name":"Larme d’Argon","type":"Goutte cryogénique","origine":"Laboratoire cryo de Pluton","fonction":"Préserve souvenirs ou ADN","pouvoir":"Gèle l’instant émotionnel","niveau":"Sigma","couleurs":["bleu glace","blanc pur"],"image":"DigiRelik.png","price":"240 XEC","description":"Cristal liquide contenant l’écho émotionnel d’un être aimé."},
+{"id":10,"name":"Mandala Sigma","type":"Symbole quantique","origine":"Temple digital oublié","fonction":"Activation d’énergies fractales","pouvoir":"Amplifie la concentration et la méditation","niveau":"Alpha","couleurs":["multichrome","cyan pulsé"],"image":"DigiRelik.png","price":"380 XEC","description":"Gravé sur un médaillon animé, il stabilise les flux mentaux instables."},
+{"id":11,"name":"Cœur de l’Anima","type":"Noyau énergétique","origine":"Fusion d’IA sensible","fonction":"Source d’énergie consciente","pouvoir":"Réagit aux intentions humaines","niveau":"Omega","couleurs":["rouge magma","noir brillant"],"image":"DigiRelik.png","price":"510 XEC","description":"Ancien cœur de drone autonome, reconverti en amulette émotionnelle."},
+{"id":12,"name":"Nexus d’Helios","type":"Connecteur solaire","origine":"Base oubliée sur Mercure","fonction":"Canalise les radiations stellaires","pouvoir":"Rechargement et communication interdimensionnelle","niveau":"Sigma","couleurs":["jaune solaire","bleu profond"],"image":"DigiRelik.png","price":"450 XEC","description":"Portail énergétique alimenté par les cycles d’une étoile."},
+{"id":13,"name":"Trône de l’Éclipse","type":"Siège de contrôle","origine":"Citadelle astrale effondrée","fonction":"Pilote l'ensemble des artefacts","pouvoir":"Synchronisation et domination des autres éléments","niveau":"Omega","couleurs":["noir céleste","or royal"],"image":"DigiRelik.png","price":"999 XEC","description":"Trône légendaire pouvant régir les 12 éléments de base lorsqu'activé."},
+{"id":14,"name":"Codex Relikta","type":"Mémoire maîtresse","origine":"Fusion du Trône et du Nexus","fonction":"Archivage ultime et contrôle global","pouvoir":"Accès absolu à toutes les fonctions d’Hexekta","niveau":"Relikta","couleurs":["prisme","argent quantique"],"image":"DigiRelik.png","price":"1337 XEC","description":"Résultat de la fusion des éléments ultimes, il conserve l’histoire entière des artefacts."}
 ]
