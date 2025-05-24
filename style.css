@@ -1,1 +1,125 @@
-/* Contenu CSS version 2.0.0 (voir message précédent) */
+/* style.css – DigiRelik thème sombre bleu fluo – version finale */
+
+/* Reset et base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Menu */
+header {
+  background-color: #001f1f;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #00ffff;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.menu-box {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+  user-select: none;
+}
+
+.menu-box:hover,
+.menu-box.active {
+  border-color: #00ffff;
+}
+
+/* Sections */
+.section {
+  display: none;
+  padding: 2rem;
+  max-width: 960px;
+  margin: 1rem auto;
+}
+
+.section.active {
+  display: block;
+}
+
+/* Titres */
+h1, h2, h3 {
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+/* Boutons et liens principaux */
+.cta-link {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #00ffff;
+  border-radius: 6px;
+  color: #00ffff;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.cta-link:hover {
+  background-color: rgba(0, 255, 255, 0.15);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #006666;
+  border-top: 1px solid #00ffff;
+  margin-top: 2rem;
+}
+
+/* Artefacts list */
+.artefact-card {
+  border: 1px solid #00ffff;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.artefact-card:hover {
+  box-shadow: 0 0 15px #00ffff;
+}
+
+.artefact-card img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .menu {
+    gap: 3rem;
+  }
+  .artefact-card {
+    margin-bottom: 1.5rem;
+  }
+}
