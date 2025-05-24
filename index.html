@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DigiRelik – Hexekta</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DigiRelik – Accueil</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #0a0a0a;
+      color: #00ffff;
+      font-family: 'Orbitron', sans-serif;
+      margin: 0; padding: 20px;
+    }
+    header, footer {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    section#projet {
+      max-width: 1000px;
+      margin: 0 auto 40px auto;
+      padding: 10px;
+      border: 1px solid #00ffff;
+      border-radius: 12px;
+      background: #111;
+    }
+    section#projet h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00ffff;
+    }
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      border-radius: 8px;
+    }
+    @media (max-width: 700px) {
+      iframe {
+        height: 600px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1 class="site-title">DigiRelik</h1>
-    <nav class="menu">
-      <div class="menu-box" onclick="showSection('home')">Accueil</div>
-      <div class="menu-box" onclick="showSection('project')">Projet</div>
-      <div class="menu-box" onclick="showSection('about')">À propos</div>
-      <div class="menu-box" onclick="showSection('contact')">Contact</div>
-    </nav>
+    <h1>DigiRelik</h1>
+    <p>Bienvenue dans l’univers Hexekta, projet NFT cybernétique et mystique.</p>
   </header>
 
-  <main>
-    <div id="home" class="section active">
-      <h2>Bienvenue sur DigiRelik</h2>
-      <p>DigiRelik est une vitrine numérique dédiée à la préservation d'artefacts NFT uniques. Notre premier projet est <strong>Hexekta</strong>, une collection d’artefacts cybernétiques aux mémoires encodées.</p>
-    </div>
-
-    <div id="project" class="section">
-      <h2>Projets NFT</h2>
-      <p>DigiRelik développe des collections numériques qui mêlent art, fiction et technologie blockchain. Chaque projet est conçu comme un univers à part entière, porteur de sens et d’histoire. Le projet fondateur est Hexekta, mais d'autres viendront enrichir cette bibliothèque vivante.</p>
-
-      <div class="project-box">
-        <img src="hexekta.jpg" alt="Artefact Hexekta" class="project-img">
-        <div class="project-description">
-          <h3>Hexekta</h3>
-          <p>Explorez les 14 artefacts fractals de l’univers Hexekta, chacun porteur de sa propre histoire et fonction cybernétique. Hexekta est une collection cyber-ésotérique sculptée dans la mémoire du futur.</p>
-          <p><a href="hexekta.html">→ Accéder à la galerie Hexekta</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div id="about" class="section">
-      <h2>À propos de DigiRelik</h2>
-      <p>DigiRelik est une initiative indépendante belge visant à archiver et mettre en lumière des artefacts numériques au croisement de l’art, de la mémoire et de la technologie. Chaque œuvre est pensée comme un témoin du temps, une relique digitale du futur.</p>
-      <p>Le projet est porté par une passion pour la transmission, la symbolique, et l’univers des NFT. DigiRelik cherche à rassembler les curieux, les artistes, les technologues et les rêveurs autour d’un patrimoine numérique à bâtir ensemble.</p>
-    </div>
-
-    <div id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Pour toute question ou collaboration : <a href="mailto:jyc.joyz@gmail.com">jyc.joyz@gmail.com</a></p>
-    </div>
-  </main>
+  <section id="projet">
+    <h2>Projet Hexekta</h2>
+    <iframe
+      src="hexekta.html"
+      title="Galerie Hexekta"
+      loading="lazy"
+      sandbox="allow-scripts allow-same-origin allow-popups"
+    ></iframe>
+  </section>
 
   <footer>
-    <p>&copy; 2025 DigiRelik – Tous droits réservés.</p>
+    <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
   </footer>
-
-  <script>
-    function showSection(id) {
-      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-    }
-  </script>
 </body>
 </html>
