@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Le Miroir de Vanta",
+    "nom": "Le Miroir de Vanta",
     "type": "Interface psychique",
     "origine": "Société secrète post-humaine",
     "fonction": "Permet l'accès aux mémoires numériques collectives",
@@ -14,7 +14,7 @@
   },
   {
     "id": 2,
-    "name": "Synapse 9",
+    "nom": "Synapse 9",
     "type": "Implant neural",
     "origine": "Laboratoire indépendant",
     "fonction": "Augmente la vitesse de pensée",
@@ -27,7 +27,7 @@
   },
   {
     "id": 3,
-    "name": "La Rose Numérique",
+    "nom": "La Rose Numérique",
     "type": "Fleur cybernétique",
     "origine": "Soldat du Métavers",
     "fonction": "Change de couleur selon les émotions",
@@ -40,7 +40,7 @@
   },
   {
     "id": 4,
-    "name": "Clé Ouroboros",
+    "nom": "Clé Ouroboros",
     "type": "Disque de données infini",
     "origine": "Ordre Ouroboros",
     "fonction": "Garde en mémoire l’évolution continue des systèmes",
@@ -53,7 +53,7 @@
   },
   {
     "id": 5,
-    "name": "Prisme de Babel",
+    "nom": "Prisme de Babel",
     "type": "Décodeur linguistique universel",
     "origine": "Collectif Babel",
     "fonction": "Décrypte toutes les langues humaines et IA",
@@ -66,7 +66,7 @@
   },
   {
     "id": 6,
-    "name": "Cœur d’Antikythera",
+    "nom": "Cœur d’Antikythera",
     "type": "Calculateur temporel",
     "origine": "Archéologues cyborgs",
     "fonction": "Prévoit les cycles et effondrements",
@@ -79,7 +79,7 @@
   },
   {
     "id": 7,
-    "name": "Ange Codex",
+    "nom": "Ange Codex",
     "type": "Manuscrit digital",
     "origine": "Archivistes célestes",
     "fonction": "Conserve les protocoles sacrés",
@@ -92,7 +92,7 @@
   },
   {
     "id": 8,
-    "name": "L’Œil de Ramsès",
+    "nom": "L’Œil de Ramsès",
     "type": "Orbe de surveillance",
     "origine": "Dynastie quantique",
     "fonction": "Observe et archive l’Histoire",
@@ -105,7 +105,7 @@
   },
   {
     "id": 9,
-    "name": "Crâne de Mnémosyne",
+    "nom": "Crâne de Mnémosyne",
     "type": "Mémoire ancestrale",
     "origine": "Généalogie IA",
     "fonction": "Transmet des souvenirs perdus",
@@ -118,7 +118,7 @@
   },
   {
     "id": 10,
-    "name": "La Couronne de Silicium",
+    "nom": "La Couronne de Silicium",
     "type": "Artefact d'autorité",
     "origine": "Empire du Cloud",
     "fonction": "Régule l’accès aux ressources vitales",
@@ -131,7 +131,7 @@
   },
   {
     "id": 11,
-    "name": "Sceptre d’Inversion",
+    "nom": "Sceptre d’Inversion",
     "type": "Instrument de causalité",
     "origine": "Maîtres du paradoxe",
     "fonction": "Inverse la cause et l’effet à petite échelle",
@@ -144,7 +144,7 @@
   },
   {
     "id": 12,
-    "name": "Étoile du Nexus",
+    "nom": "Étoile du Nexus",
     "type": "Fragment stellaire",
     "origine": "Explorateurs galactiques",
     "fonction": "Relie instantanément des réseaux distants",
@@ -157,7 +157,7 @@
   },
   {
     "id": 13,
-    "name": "La Sphère Origine",
+    "nom": "La Sphère Origine",
     "type": "Noyau primordial",
     "origine": "Gardiens du début",
     "fonction": "Stocke l’énergie de création",
@@ -170,7 +170,7 @@
   },
   {
     "id": 14,
-    "name": "Trône de synchronisation",
+    "nom": "Trône de synchronisation",
     "type": "Centre de convergence",
     "origine": "Architectes du Multivers",
     "fonction": "Régule la connexion des artefacts Hexekta",
