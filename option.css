@@ -1,3 +1,5 @@
+/* Base visuelle DigiRelik – Complément CSS */
+
 body {
   background-color: #0a0a0a;
   color: #e0f7ff;
@@ -15,47 +17,55 @@ header {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #00ffff;
   margin: 0;
 }
 
+/* Galerie (hexekta) */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 2rem;
 }
 
 .artefact-card {
-  background: #141414;
+  background-color: #141414;
   border: 1px solid #00aaff;
   padding: 1rem;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 0 10px #00ffff55;
-  transition: transform 0.3s;
+  box-shadow: 0 0 12px #00ffff33;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .artefact-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
+  box-shadow: 0 0 18px #00ffff88;
+}
+
+.artefact-card h2 {
+  font-size: 1.2rem;
+  color: #00f0ff;
 }
 
 .artefact-img {
   width: 100%;
   max-height: 200px;
   object-fit: contain;
-  margin-bottom: 1rem;
   border-radius: 8px;
+  margin-bottom: 0.7rem;
 }
 
+/* Page individuelle (art.html) */
 .artefact-container {
-  max-width: 800px;
+  max-width: 850px;
   margin: auto;
   padding: 2rem;
   background: #111;
-  border-radius: 12px;
-  box-shadow: 0 0 15px #00ffff44;
+  border-radius: 14px;
+  box-shadow: 0 0 20px #00ffff44;
 }
 
 .artefact-img-large {
@@ -65,32 +75,25 @@ h1 {
 }
 
 .actions {
-  margin: 2rem 0;
+  margin: 2rem 0 1rem;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .btn {
   background-color: #00ffff;
   color: #000;
-  padding: 0.7rem 1.2rem;
+  padding: 0.75rem 1.3rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
   background-color: #00cccc;
 }
 
-.ipfs-qr {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.ipfs-qr img {
-  margin-top: 0.5rem;
-  border-radius: 6px;
-}
+.ipfs
