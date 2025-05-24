@@ -1,52 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hexekta – Artefact</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artefact Hexekta</title>
+  <link rel="stylesheet" href="option.css" />
+  <script defer src="detail.js"></script>
 </head>
 <body>
   <header>
-    <h1 class="site-title">Hexekta</h1>
-    <a href="hexekta.html">← Retour à la galerie</a>
+    <h1 id="artefact-nom">Chargement...</h1>
   </header>
 
   <main>
-    <section class="artifact-detail" id="artifact-detail">
-      <h2>Chargement...</h2>
+    <section id="artefact-detail" class="artefact-container">
+      <!-- Contenu injecté dynamiquement -->
     </section>
   </main>
-
-  <footer>
-    <p>&copy; 2025 DigiRelik – Hexekta</p>
-  </footer>
-
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const id = parseInt(params.get('id'));
-
-    fetch('data.json')
-      .then(response => response.json())
-      .then(data => {
-        const artifact = data[id - 1];
-        const container = document.getElementById('artifact-detail');
-
-        if (!artifact) {
-          container.innerHTML = '<p>Artefact non trouvé.</p>';
-          return;
-        }
-
-        container.innerHTML = `
-          <h2>Artefact ${id} : ${artifact.nom}</h2>
-          <img src="artefact${id}.jpg" alt="Artefact ${id}" class="artifact-image">
-          <p>${artifact.description}</p>
-        `;
-      })
-      .catch(error => {
-        document.getElementById('artifact-detail').innerHTML = '<p>Erreur lors du chargement des données.</p>';
-        console.error(error);
-      });
-  </script>
 </body>
 </html>
