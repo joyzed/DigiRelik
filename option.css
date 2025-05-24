@@ -1,4 +1,4 @@
-/* option.css – v1.0.1 – Nettoyage et consolidation du style menu avec sous-menus */
+/* option.css – v1.0.1.1 – CSS réorganisé et optimisé */
 
 .menu-list,
 .submenu {
@@ -51,15 +51,20 @@
   white-space: nowrap;
 }
 
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
 
-/* Version : v2.1.0.2 */
+.label {
+  font-weight: bold;
+  color: #00ffff;
+}
 
-/* Couleur de texte par défaut */
 body, p, li, h1, h2, h3, h4, h5, h6, a {
   color: #cccccc;
 }
 
-/* Sections */
 .section {
   padding: 1.5rem;
   max-width: 860px;
@@ -85,7 +90,6 @@ body, p, li, h1, h2, h3, h4, h5, h6, a {
   text-decoration: underline;
 }
 
-/* Slogan */
 .slogan {
   font-style: italic;
   color: #00ffff;
@@ -93,7 +97,6 @@ body, p, li, h1, h2, h3, h4, h5, h6, a {
   margin-bottom: 1rem;
 }
 
-/* Blockquote */
 blockquote {
   margin: 1rem 0;
   padding: 1rem;
@@ -103,12 +106,8 @@ blockquote {
   color: #aaffff;
 }
 
-/* Masquer la version */
-.version-tag {
-  display: none;
-}
+/* Affichage artefacts */
 
-/* Galerie artefacts */
 #artefact-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -142,7 +141,6 @@ blockquote {
   color: #aaa;
 }
 
-/* Mise en page détaillée de art.html */
 #artefact-detail {
   max-width: 800px;
   margin: 2rem auto;
