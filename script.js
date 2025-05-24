@@ -10,11 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
           const card = document.createElement("div");
           card.className = "artefact-card";
           card.innerHTML = `
-            <a href="art.html?id=${artefact.id}">
-              <img src="DigiRelik.jpg" alt="${artefact.nom}" class="artefact-img" />
-              <h2>${artefact.nom}</h2>
-              <p>${artefact.description}</p>
-            </a>
+            <img src="DigiRelik.png" alt="${artefact.nom}">
+            <h2>${artefact.nom}</h2>
+            <p>${artefact.description}</p>
+            <a href="art.html?id=${artefact.id}" class="lien-artefact">Voir l'artefact</a>
           `;
           gallery.appendChild(card);
         });
@@ -27,14 +26,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const container = document.getElementById("artefact-detail");
 
         if (!artefact) {
-          container.innerHTML = "<p>Artefact introuvable.</p>";
+          document.getElementById("artefact-nom").textContent = "Artefact introuvable";
+          container.innerHTML = "<p>Impossible de trouver cet artefact.</p>";
           return;
         }
 
         document.getElementById("artefact-nom").textContent = artefact.nom;
 
         container.innerHTML = `
-          <img src="DigiRelik.jpg" alt="${artefact.nom}" class="artefact-img-large">
+          <img src="DigiRelik.png" alt="${artefact.nom}" class="artefact-img-large">
           <h2>${artefact.nom}</h2>
           <p><strong>Description :</strong> ${artefact.description}</p>
           <p><strong>Origine :</strong> ${artefact.origine}</p>
