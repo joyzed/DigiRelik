@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hexekta – Artefacts du futur</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DigiRelik – Hexekta</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="option.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <h1 class="site-title">Hexekta</h1>
-    <h2 class="slogan">Les artefacts du futur ont une mémoire</h2>
+    <h1><span class="logo">DigiRelik</span> – Hexekta</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li class="selected"><a href="hexekta.html">Hexekta</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <div id="hexekta-gallery" class="artifact-grid"></div>
+    <section id="intro">
+      <h2>Hexekta : Collection d’Artefacts</h2>
+      <p>
+        Hexekta est la première collection NFT de DigiRelik : artefacts cybernétiques, reliques uniques du futur, à découvrir et à collectionner.
+      </p>
+    </section>
+
+    <section id="gallery">
+      <h3>Galerie des Artefacts</h3>
+      <div id="hexekta-list">
+        <!-- Liste dynamique générée par script.js à partir de data.json -->
+        <noscript>Activez JavaScript pour voir la galerie.</noscript>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 DigiRelik – Hexekta</p>
+    <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
   </footer>
-
-  <script src="data.js"></script>
-  <script>
-    const gallery = document.getElementById('hexekta-gallery');
-    data.forEach((item, index) => {
-      const box = document.createElement('div');
-      box.className = 'artifact-box';
-      box.innerHTML = `
-        <h3>${index + 1}. ${item.nom}</h3>
-        <p>${item.description}</p>
-      `;
-      gallery.appendChild(box);
-    });
-  </script>
 </body>
 </html>
