@@ -1,76 +1,45 @@
-<!-- faq.html – v1.0.1 – 24/05/2025 13:00:07 – Uniformisation ossature (menu + footer) -->
+<!-- faq.html – v1a.0.0.1 – 24/05/2025 20:00:00 – Gabarit simplyv1 avec section FAQ -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DigiRelik – Accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigiRelik – FAQ</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="option.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-<header>
-    <h1 class="site-title">DigiRelik</h1>
-    
-    
-    <nav class="menu">
-      <ul class="menu-list">
-        <li><a href="#">Accueil</a></li>
-        <li>
-          <a href="#">Projet</a>
-          <ul class="submenu">
-            <li><a href="hexekta.html">Hexekta</a></li>
-            <li><a href="mint.html">Mint</a></li>
-            <li><a href="trade.html">Trade</a></li>
-            <li><a href="labs.html">Labs</a></li>
-          </ul>
-        </li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-
-
-  </header>
-
-<header style="padding: 1rem; text-align: center;">
-    <h1 style="color: #00ffff;">DigiRelik</h1>
-    <nav style="margin-top: 1rem;">
-      <a href="index.html" style="margin: 0 10px; color: #00ffff;">Accueil</a>
-      <a href="hexekta.html" style="margin: 0 10px; color: #00ffff;">Projet</a>
-      <a href="drk.html" style="margin: 0 10px; color: #00ffff;">DRK</a>
-      <a href="mint.html" style="margin: 0 10px; color: #00ffff;">Mint</a>
-      <a href="faq.html" style="margin: 0 10px; color: #00ffff; font-weight: bold;">FAQ</a>
-    </nav>
-  </header>
-
-  <div style="text-align:center; font-size: 0.85rem; color: #00ffff; margin-bottom: 1rem;">
-    Version : v1.0.0 (2025-05-24 – première version publique de la FAQ)
+  <div id="hd">
+    <h1>DigiRelik</h1>
+    <p class="version">Version : v1a.0.0.1 – 24/05/2025 20:00</p>
   </div>
 
-  <main style="max-width: 860px; margin: 0 auto; padding: 1.5rem;">
-    <h2 style="color: #00ffff;">Foire aux questions</h2>
+  <div id="mn">
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="hexekta.html">Hexekta</a></li>
+        <li><a href="labs.html">Labs</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
-    <h3>Qu'est-ce que DigiRelik ?</h3>
-    <p>DigiRelik est un projet artistique et numérique belge qui propose des artefacts NFT chargés de sens, d’histoire et d’identité.</p>
+  <div id="ct">
+    <section id="faq" class="section active">
+      <h2>FAQ</h2>
+      <p>Contenu en cours de développement pour la section FAQ.</p>
+    </section>
+  </div>
 
-    <h3>Sur quelle blockchain sont les NFT ?</h3>
-    <p>Les NFT sont mintés sur la blockchain <strong>eCash (XEC)</strong> et horodatés sur <strong>DigiByte (DGB)</strong>.</p>
-
-    <h3>Comment minter un artefact ?</h3>
-    <p>Rendez-vous sur la page <a href="mint.html" style="color: #00ffff;">Mint</a>, scannez le QR code ou utilisez le lien vers l’interface de transaction.</p>
-
-    <h3>Qu'est-ce que le DRK ?</h3>
-    <p>Le DigiRelik Coin (DRK) est un token utilitaire destiné à offrir des avantages aux collectionneurs, comme l’accès anticipé ou des réductions.</p>
-  </main>
-
-  <footer style="text-align: center; padding: 1rem; color: #666;">
-    &copy; 2025 DigiRelik – Tous droits réservés
-  </footer>
-
-<footer>
-    <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
-  </footer>
+  <div id="ft">
+    <footer>
+      <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
+    </footer>
+  </div>
 </body>
 </html>

@@ -1,91 +1,45 @@
-<!-- news.html – v1.0.1 – 24/05/2025 13:00:07 – Uniformisation ossature (menu + footer) -->
+<!-- news.html – v1a.0.0.1 – 24/05/2025 20:00:00 – Gabarit simplyv1 avec section News -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DigiRelik – Accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigiRelik – News</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="option.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-<header>
-    <h1 class="site-title">DigiRelik</h1>
-    
-    
-    <nav class="menu">
-      <ul class="menu-list">
-        <li><a href="#">Accueil</a></li>
-        <li>
-          <a href="#">Projet</a>
-          <ul class="submenu">
-            <li><a href="hexekta.html">Hexekta</a></li>
-            <li><a href="mint.html">Mint</a></li>
-            <li><a href="trade.html">Trade</a></li>
-            <li><a href="labs.html">Labs</a></li>
-          </ul>
-        </li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-
-
-  </header>
-
-<header style="padding: 1rem; text-align: center;">
-    <h1 style="color: #00ffff;">DigiRelik</h1>
-    <nav style="margin-top: 1rem;">
-      <a href="index.html" style="margin: 0 10px; color: #00ffff;">Accueil</a>
-      <a href="hexekta.html" style="margin: 0 10px; color: #00ffff;">Projet</a>
-      <a href="drk.html" style="margin: 0 10px; color: #00ffff;">DRK</a>
-      <a href="mint.html" style="margin: 0 10px; color: #00ffff;">Mint</a>
-      <a href="news.html" style="margin: 0 10px; color: #00ffff; font-weight: bold;">News</a>
-    </nav>
-  </header>
-
-  <div style="text-align:center; font-size: 0.85rem; color: #00ffff; margin-bottom: 1rem;">
-    Version : v1.0.0 (2025-05-24 – première page d’actualités, structure par blocs)
+  <div id="hd">
+    <h1>DigiRelik</h1>
+    <p class="version">Version : v1a.0.0.1 – 24/05/2025 20:00</p>
   </div>
 
-  <main style="max-width: 860px; margin: 0 auto; padding: 1.5rem;">
+  <div id="mn">
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="hexekta.html">Hexekta</a></li>
+        <li><a href="labs.html">Labs</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
-    <section style="margin-bottom: 2rem; border-bottom: 1px solid rgba(0, 255, 255, 0.1); padding-bottom: 1rem;">
-      <div style="font-size: 0.85rem; color: #00ffff; margin-bottom: 0.3rem;">24 mai 2025 – Version 2.0.3</div>
-      <h3 style="margin: 0 0 0.5rem; color: #00e0e0;">Ajout de liens vers FAQ et Roadmap</h3>
-      <p>
-        Les liens vers la FAQ et la feuille de route ont été ajoutés à la page d’accueil.  
-        Cela améliore la navigation et rend les informations clés accessibles dès l’introduction.
-      </p>
+  <div id="ct">
+    <section id="news" class="section active">
+      <h2>News</h2>
+      <p>Contenu en cours de développement pour la section News.</p>
     </section>
+  </div>
 
-    <section style="margin-bottom: 2rem; border-bottom: 1px solid rgba(0, 255, 255, 0.1); padding-bottom: 1rem;">
-      <div style="font-size: 0.85rem; color: #00ffff; margin-bottom: 0.3rem;">24 mai 2025 – v2.0.2 stable</div>
-      <h3 style="margin: 0 0 0.5rem; color: #00e0e0;">Création des pages DRK et Mint</h3>
-      <p>
-        Deux nouvelles pages ont été intégrées : une pour présenter le token DRK et une pour permettre le mint des artefacts.  
-        Les deux suivent la charte visuelle DigiRelik avec version visible et structure sobre.
-      </p>
-    </section>
-
-    <section style="margin-bottom: 2rem;">
-      <div style="font-size: 0.85rem; color: #00ffff; margin-bottom: 0.3rem;">23 mai 2025 – Fondation v2.0.0</div>
-      <h3 style="margin: 0 0 0.5rem; color: #00e0e0;">Refonte complète du site</h3>
-      <p>
-        DigiRelik passe en version 2 avec une structure refondue, une galerie dynamique et un système de fichiers unifiés.  
-        Toutes les bases sont désormais prêtes pour la mise en ligne des futures collections.
-      </p>
-    </section>
-
-  </main>
-
-  <footer style="text-align: center; padding: 1rem; color: #666;">
-    &copy; 2025 DigiRelik – Tous droits réservés
-  </footer>
-
-<footer>
-    <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
-  </footer>
+  <div id="ft">
+    <footer>
+      <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
+    </footer>
+  </div>
 </body>
 </html>

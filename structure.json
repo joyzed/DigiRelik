@@ -1,0 +1,65 @@
+[
+  {
+    "file": "index.html",
+    "id": "accueil",
+    "title": "Accueil",
+    "version": "v1a.0.0.1",
+    "status": "active"
+  },
+  {
+    "file": "hexekta.html",
+    "id": "hexekta",
+    "title": "Hexekta",
+    "version": "v1a.0.0.1",
+    "status": "todo"
+  },
+  {
+    "file": "art.html",
+    "id": "art",
+    "title": "Détail Artefact",
+    "version": "v1a.0.0.1",
+    "status": "todo"
+  },
+  {
+    "file": "labs.html",
+    "id": "labs",
+    "title": "Labs",
+    "version": "v1a.0.0.1",
+    "status": "todo"
+  },
+  {
+    "file": "mint.html",
+    "id": "mint",
+    "title": "Mint",
+    "version": "v1a.0.0.1",
+    "status": "paused"
+  },
+  {
+    "file": "trade.html",
+    "id": "trade",
+    "title": "Trade",
+    "version": "v1a.0.0.1",
+    "status": "todo"
+  },
+  {
+    "file": "roadmap.html",
+    "id": "roadmap",
+    "title": "Roadmap",
+    "version": "v1a.0.0.1",
+    "status": "todo"
+  },
+  {
+    "file": "faq.html",
+    "id": "faq",
+    "title": "FAQ",
+    "version": "v1a.0.0.1",
+    "status": "todo"
+  },
+  {
+    "file": "news.html",
+    "id": "news",
+    "title": "News",
+    "version": "v1a.0.0.1",
+    "status": "todo"
+  }
+]

@@ -1,75 +1,45 @@
-<!-- mint.html – v1.0.1.2 – 24/05/2025 15:40:17 – Menu unifié et contenu unique -->
+<!-- mint.html – v1a.0.0.1 – 24/05/2025 20:00:00 – Gabarit simplyv1 avec section Mint -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DigiRelik – Accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigiRelik – Mint</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="option.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-<header>
-    <h1 class="site-title">DigiRelik</h1>
-    
-    
-    
+  <div id="hd">
+    <h1>DigiRelik</h1>
+    <p class="version">Version : v1a.0.0.1 – 24/05/2025 20:00</p>
+  </div>
+
+  <div id="mn">
     <nav class="menu">
-      <ul class="menu-list">
+      <ul>
         <li><a href="index.html">Accueil</a></li>
-        <li>
-          <a href="#">Projet</a>
-          <ul class="submenu">
-            <li><a href="hexekta.html">Hexekta</a></li>
-            <li><a href="mint.html">Mint</a></li>
-            <li><a href="trade.html">Trade</a></li>
-            <li><a href="labs.html">Labs</a></li>
-          </ul>
-        </li>
-        <li><a href="about.html">À propos</a></li>
+        <li><a href="hexekta.html">Hexekta</a></li>
+        <li><a href="labs.html">Labs</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="news.html">News</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+  </div>
 
+  <div id="ct">
+    <section id="mint" class="section active">
+      <h2>Mint</h2>
+      <p>Contenu en cours de développement pour la section Mint.</p>
+    </section>
+  </div>
 
-
-  </header>
-
-<main style="max-width: 860px; margin: 0 auto; padding: 1.5rem;">
-    <h2 style="color: #00ffff;">Mint un artefact Hexekta</h2>
-    <p style="font-style: italic; color: #00ffff;">Inscrire la mémoire, une transaction à la fois.</p>
-
-    <p>
-      Le mint est le processus qui permet de transformer un artefact en NFT inscrit sur la blockchain.  
-      En effectuant cette opération, vous devenez officiellement propriétaire de l'objet, et son existence est gravée de façon permanente.
-    </p>
-
-    <p>
-      La blockchain utilisée est <strong>eCash (XEC)</strong> pour son efficacité et ses frais minimes.  
-      Chaque mint est aussi certifié par <strong>DigiByte (DGB)</strong> via un timestamp, garantissant son authenticité et sa traçabilité.
-    </p>
-
-    <p>
-      Le prix de mint est fixé à <strong>300 XEC</strong> pour chaque artefact.  
-      Des bonus en <a href="drk.html" style="color:#00ffff;">DRK</a> pourront être appliqués aux premiers participants.
-    </p>
-
-    <div style="text-align:center; margin: 2rem 0;">
-      <img src="qr-example.png" alt="QR code de mint" style="width:160px;height:160px;" />
-      <p style="margin-top: 1rem;">
-        <a href="https://example.com/mint/hexekta" target="_blank" style="color:#00ffff;">→ Mint maintenant</a>
-      </p>
-    </div>
-
-    <p>
-      Une fois minté, votre artefact sera visible publiquement dans la collection, mais son statut vous appartiendra.  
-      Aucun mint automatique n’est déclenché. Le processus est volontaire, individuel, traçable.
-    </p>
-  </main>
-
-<footer>
-    <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
-  </footer>
+  <div id="ft">
+    <footer>
+      <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
+    </footer>
+  </div>
 </body>
 </html>
