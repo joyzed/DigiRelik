@@ -39,34 +39,6 @@
   <footer>
     <p>&copy; 2025 DigiRelik – Hexekta</p>
   </footer>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('.menu-box').forEach(box => {
-        box.addEventListener('click', function() {
-          document.querySelectorAll('.menu-box').forEach(b => b.classList.remove('active'));
-          document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-          this.classList.add('active');
-          document.getElementById(this.dataset.section).classList.add('active');
-        });
-      });
-      // Galerie dynamique
-      fetch('data.json')
-        .then(res => res.json())
-        .then(data => {
-          const gallery = document.getElementById('hexekta-gallery');
-          gallery.innerHTML = '';
-          data.forEach((item, index) => {
-            const id = index + 1;
-            const element = document.createElement('div');
-            element.className = 'artifact-box';
-            element.innerHTML = `
-              <h3><a href="art.html?id=${id}">${item.nom}</a></h3>
-              <p>${item.description}</p>
-            `;
-            gallery.appendChild(element);
-          });
-        });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
