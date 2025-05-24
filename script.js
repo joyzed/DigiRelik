@@ -30,3 +30,19 @@ fetch('data.json')
       nftList.appendChild(div);
     });
   });
+
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(artefact => {
+      // Exemple de rendu dynamique
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <h3>${artefact.name}</h3>
+        <img src="${artefact.image}" alt="${artefact.name}" style="max-width:200px">
+        <p>${artefact.description}</p>
+        <p><strong>Pouvoir :</strong> ${artefact.power}</p>
+      `;
+      document.getElementById('artifacts').appendChild(div);
+    });
+  });
