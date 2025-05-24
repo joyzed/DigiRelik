@@ -1,38 +1,45 @@
-SimplyV1 – Version 1.0.1
-=========================
+SimplyV1 – Intégration DigiRelik – v1.0.4.4
+================================================
 
 Créateur : Jean-Yves Cornet
 Date : 24 mai 2025
 
 Description :
 --------------
-SimplyV1 est une base de développement web ultra légère, basée sur HTML, CSS et JS.
-Elle sert de template minimaliste pour initier rapidement un projet web.
+Cette version est une ossature HTML/CSS/JS solide et responsive intégrant un accueil
+du projet DigiRelik. Elle sert de base pour développer une vitrine web simple, 
+centrée sur le thème fluo et sombre de DigiRelik.
 
-Structure :
------------
-- index.html : structure HTML avec header, menu, contenu et footer
-- style.css : thème sombre Digirelikv1.0, menu centré et sous-menu CSS only
-- script.js : fichier JS central prêt pour intégration
-- img/ : dossier réservé aux images
-- readme.txt : ce fichier
+Contenu :
+---------
+- index.html : page d’accueil DigiRelik intégrée (Hexekta, présentation, menu)
+- style.css : thème responsive fluo #00ffff sur fond noir, compatible mobile
+- script.js : JS vide prêt à accueillir du code
+- img/ : dossier vide pour ajout d’illustrations
+- index_backup_v1.0.4.3.html : sauvegarde de l’ossature simplyv1 précédente
 
-Identifiants :
+Collections mentionnées :
+-------------------------
+- Hexekta
+- DeadCanTalk
+- DigiArt
+- ShadowCore
+- Memor-X
+- Codex Lux
+
+Instructions :
 --------------
-Les ID HTML `#hd`, `#mn`, `#ct`, `#ft` sont fixes et NE DOIVENT JAMAIS être modifiés.
-
-Versions :
-----------
-- v1.0.0 : structure de base
-- v1.0.1 : ajout menu centré, sous-menu CSS-only, changelog intégré
-
-Utilisation :
--------------
 1. Dézippez l’archive
-2. Ajoutez vos contenus dans `#ct`
-3. Développez vos scripts dans `script.js`
-4. Ajoutez vos images dans le dossier `img/`
+2. Ajoutez vos assets dans /img
+3. Modifiez les contenus dans #ct selon vos besoins
+4. Personnalisez style.css ou ajoutez dans option.css
+
+Note :
+------
+Les identifiants HTML (#hd, #mn, #ct, #ft) sont fixes et servent d’ossature centrale.
+Le design suit la ligne graphique DigiRelik : minimalisme, bleu fluo, fond noir.
 
 Licence :
 ---------
-Libre d’usage personnel ou projet prototypé. Mention du créateur appréciée : Jean-Yves Cornet.
+Libre d’utilisation à but personnel ou de prototypage.
+Mention de l’auteur appréciée : Jean-Yves Cornet
