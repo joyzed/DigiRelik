@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DigiRelik – Hexekta</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="option.css" />
-  <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hexekta – Galerie</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="option.css">
 </head>
 <body>
   <header>
-    <h1><span class="logo">DigiRelik</span> – Hexekta</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li class="selected"><a href="hexekta.html">Hexekta</a></li>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <h1 class="site-title">DigiRelik</h1>
+    <nav class="menu">
+      <div class="menu-box active" data-section="gallery">Galerie</div>
+      <div class="menu-box" data-section="about">À propos</div>
+      <div class="menu-box" data-section="contact">Contact</div>
+      <div class="menu-box" data-section="retour"><a href="index.html" style="color:inherit;text-decoration:none;">Accueil</a></div>
     </nav>
   </header>
-
   <main>
-    <section id="intro">
-      <h2>Hexekta : Collection d’Artefacts</h2>
-      <p>
-        Hexekta est la première collection NFT de DigiRelik : artefacts cybernétiques, reliques uniques du futur, à découvrir et à collectionner.
-      </p>
-    </section>
-
-    <section id="gallery">
-      <h3>Galerie des Artefacts</h3>
-      <div id="hexekta-list">
-        <!-- Liste dynamique générée par script.js à partir de data.json -->
-        <noscript>Activez JavaScript pour voir la galerie.</noscript>
+    <section id="gallery" class="section active">
+      <h2>Les artefacts du futur ont une mémoire</h2>
+      <div id="hexekta-gallery" class="artifact-grid">
+        <p>Chargement des artefacts...</p>
       </div>
     </section>
+    <section id="about" class="section">
+      <h2>À propos de la collection</h2>
+      <p>Hexekta, c’est la fusion de la mémoire digitale et du symbolisme fractal. Chaque artefact est unique, issu d’un univers cybernétique inspiré.</p>
+    </section>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Contactez l’équipe DigiRelik pour tout partenariat ou question autour de la collection Hexekta.</p>
+    </section>
+    <section id="retour" class="section">
+      <p><a href="index.html">← Retour à l’accueil DigiRelik</a></p>
+    </section>
   </main>
-
   <footer>
-    <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
+    <p>&copy; 2025 DigiRelik – Hexekta</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
