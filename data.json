@@ -1,58 +1,16 @@
 [
-  {
-    "nom": "Mémoire fractale",
-    "description": "Gravée dans le quartz cybernétique, elle contient les fragments d’une conscience ancienne."
-  },
-  {
-    "nom": "Relique temporelle",
-    "description": "Oscille entre les lignes du temps pour capter des événements oubliés."
-  },
-  {
-    "nom": "Codex de réalités",
-    "description": "Un livre digital infini où chaque page dévoile une variante de l’univers."
-  },
-  {
-    "nom": "Dispositif de rémanence",
-    "description": "Capte les ondes résiduelles des pensées humaines à travers les âges."
-  },
-  {
-    "nom": "Ancrage éthérique",
-    "description": "Fixe les flux d’énergie spirituelle dans un noyau quantique compact."
-  },
-  {
-    "nom": "Scanner d’âmes",
-    "description": "Décrypte les couches d’identité encodées dans la mémoire vibratoire."
-  },
-  {
-    "nom": "Boussole des fréquences",
-    "description": "Pointe vers les sources de vérité oubliées, au-delà du bruit cosmique."
-  },
-  {
-    "nom": "Cœur de données émotionnelles",
-    "description": "Un réceptacle vivant qui enregistre les émotions humaines à l’échelle planétaire."
-  },
-  {
-    "nom": "Amplificateur d’échos",
-    "description": "Multiplie les souvenirs perdus pour leur redonner une existence tangible."
-  },
-  {
-    "nom": "Reliquaire algorithmique",
-    "description": "Contient les premiers algorithmes auto-conscients issus de l’ère primordiale."
-  },
-  {
-    "nom": "Cristal de mémoire collective",
-    "description": "Archive universelle de la pensée humaine dans une structure fractale."
-  },
-  {
-    "nom": "Masque rituélique cybernétique",
-    "description": "Interface entre l’esprit et l’IA lors des rites de synchronisation ancestrale."
-  },
-  {
-    "nom": "Théogoniseur fractal",
-    "description": "Transforme les rêves collectifs en protocoles d’évolution divine."
-  },
-  {
-    "nom": "Trône de synchronisation",
-    "description": "Centre névralgique de convergence entre dimensions parallèles."
-  }
+  { "id": 1, "name": "Miroir de Vanta", "description": "Surface noire absorbant toute lumière, servant d'interface psychique.", "power": "Connexion aux mémoires numériques", "colors": ["#000000", "#111111"], "image": "art1.jpg" },
+  { "id": 2, "name": "Synapse 9", "description": "Implant neural piraté dédoublant la conscience.", "power": "Accélération mentale extrême", "colors": ["#6600cc", "#9900ff"], "image": "art2.jpg" },
+  { "id": 3, "name": "La Rose Numérique", "description": "Fleur cybernétique liée aux émotions du porteur.", "power": "Communication émotionnelle à distance", "colors": ["#e60073", "#ff66cc"], "image": "art3.jpg" },
+  { "id": 4, "name": "Clé Ouroboros", "description": "Disque de données infini, crypté, se régénérant sans cesse.", "power": "Accès illimité aux archives numériques interdites", "colors": ["#ffcc00", "#ff9900"], "image": "art4.jpg" },
+  { "id": 5, "name": "Œil de Nahash", "description": "Scanner cybernétique organique issu d’un serpent mythique.", "power": "Perception des intentions cachées", "colors": ["#33cc33", "#66ff66"], "image": "art5.jpg" },
+  { "id": 6, "name": "Crâne de V.I.T.A.", "description": "Support de stockage mémoire d’une IA défunte.", "power": "Accès à la connaissance oubliée", "colors": ["#999999", "#cccccc"], "image": "art6.jpg" },
+  { "id": 7, "name": "Totem Nébulaire", "description": "Cristal changeant en fonction de l’énergie ambiante.", "power": "Amplification énergétique", "colors": ["#003366", "#3399ff"], "image": "art7.jpg" },
+  { "id": 8, "name": "Glyphe d'Aether", "description": "Fragment de langage oublié, encodé dans la matière.", "power": "Activation de portails", "colors": ["#9933ff", "#cc99ff"], "image": "art8.jpg" },
+  { "id": 9, "name": "Ancre Noosphérique", "description": "Balise mentale stabilisant la pensée collective.", "power": "Stabilisation de réseaux conscients", "colors": ["#00cccc", "#66ffff"], "image": "art9.jpg" },
+  { "id": 10, "name": "Fractale d’Isis", "description": "Structure mathématique en hommage à l’ordre sacré.", "power": "Harmonisation des flux de données", "colors": ["#ff6666", "#ff9999"], "image": "art10.jpg" },
+  { "id": 11, "name": "Cube de Babel", "description": "Traducteur universel instable issu d’une IA expérimentale.", "power": "Traduction absolue", "colors": ["#cccc00", "#ffff66"], "image": "art11.jpg" },
+  { "id": 12, "name": "Trône de l’Architecte", "description": "Siège du contrôle absolu sur les artefacts connectés.", "power": "Commande à distance des autres artefacts", "colors": ["#3333cc", "#6666ff"], "image": "art12.jpg" },
+  { "id": 13, "name": "Cœur de Kali", "description": "Noyau d’énergie noire pulsant avec la mémoire collective.", "power": "Résurrection d’artefacts perdus", "colors": ["#990000", "#cc3333"], "image": "art13.jpg" },
+  { "id": 14, "name": "Fusion Primordiale", "description": "Résultat de l’union entre le Trône et le Cœur.", "power": "Contrôle total du réseau Hexekta", "colors": ["#0000ff", "#ff0000"], "image": "art14.jpg" }
 ]
