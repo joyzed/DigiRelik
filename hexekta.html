@@ -1,54 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hexekta – Galerie</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hexekta – Artefacts</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="artefact.js"></script>
 </head>
 <body>
   <header>
-    <h1 class="site-title">Hexekta</h1>
-    <h2 class="slogan">Les artefacts du futur ont une mémoire</h2>
+    <h1>Hexekta : Les Artefacts</h1>
   </header>
 
   <main>
-    <div id="hexekta-gallery" class="artifact-grid">
-      <p>Chargement des artefacts...</p>
-    </div>
+    <section id="gallery" class="grid-container">
+      <!-- Les artefacts seront insérés ici dynamiquement -->
+    </section>
   </main>
-
-  <footer>
-    <p>&copy; 2025 DigiRelik – Hexekta</p>
-  </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      fetch('data.json')
-        .then(res => {
-          if (!res.ok) throw new Error("Impossible de charger data.json");
-          return res.json();
-        })
-        .then(data => {
-          const gallery = document.getElementById('hexekta-gallery');
-          gallery.innerHTML = ''; // efface "Chargement..."
-          data.forEach((item, index) => {
-            const id = index + 1;
-            const element = document.createElement('div');
-            element.className = 'artifact-box';
-            element.innerHTML = `
-              <h3><a href="art.html?id=${id}">${item.nom}</a></h3>
-              <p>${item.description}</p>
-            `;
-            gallery.appendChild(element);
-          });
-        })
-        .catch(err => {
-          document.getElementById('hexekta-gallery').innerHTML = 
-            '<p style="color:red;">Erreur lors du chargement des artefacts : ' + err.message + '</p>';
-          console.error(err);
-        });
-    });
-  </script>
 </body>
 </html>
