@@ -1,69 +1,65 @@
-/* style.css – v1.0.1 – 24/05/2025 17:12:00
-   changelog :
-   - ajout menu horizontal centré
-   - ajout sous-menu déroulant CSS-only pour "About"
-*/
-
+/* style.css – v1a.0.0.0 – 24/05/2025 19:45:00 – Style principal sombre DigiRelik v1a */
 body {
   margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
   background-color: #000;
   color: #00ffff;
+  line-height: 1.6;
 }
-
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #00ffff;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
 #hd, #mn, #ct, #ft {
-  padding: 20px;
-  border-bottom: 1px solid #00ffff;
+  padding: 1em;
 }
-
 #ft {
-  border-top: 1px solid #00ffff;
-  border-bottom: none;
+  text-align: center;
+  font-size: 0.9em;
+  color: #ccc;
 }
-
-/* Menu */
 .menu ul {
   list-style: none;
-  margin: 0;
   padding: 0;
-  text-align: center;
+  margin: 0;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
 }
-
 .menu ul li {
-  display: inline-block;
   position: relative;
-  margin: 0 20px;
 }
-
 .menu ul li a {
-  text-decoration: none;
-  color: #00ffff;
-  padding: 8px 12px;
+  padding: 0.5em 1em;
   display: block;
-  transition: background-color 0.3s ease;
+  background-color: #111;
+  border-radius: 5px;
 }
-
-.menu ul li a:hover {
-  background-color: #004444;
+.menu ul li:hover > ul {
+  display: block;
 }
-
-/* Sous-menu */
 .submenu {
   display: none;
   position: absolute;
-  background-color: #001111;
-  min-width: 140px;
-  top: 100%;
+  top: 2.5em;
   left: 0;
-  z-index: 1000;
+  background-color: #111;
+  padding: 0.5em;
+  border: 1px solid #00ffff;
+  z-index: 999;
 }
-
 .submenu li {
-  display: block;
   margin: 0;
 }
-
-.menu ul li:hover .submenu {
-  display: block;
+.version {
+  font-size: 0.9em;
+  color: #888;
 }

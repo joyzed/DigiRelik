@@ -1,50 +1,69 @@
-<!-- index.html – v1.0.4.4 – 24/05/2025 18:15:00 – accueil DigiRelik -->
+<!-- index.html – v1a.0.0.0 – 24/05/2025 19:45:00 – Base DigiRelik intégrée dans ossature simplyv1 -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>DigiRelik – Artefacts Numériques</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DigiRelik – Accueil</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="option.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <div id="hd">
     <h1>DigiRelik</h1>
-    <p>Une collection d’artefacts numériques pour une mémoire décentralisée.</p>
+    <p class="version">Version : v1a.0.0.0 – 24/05/2025 19:45</p>
   </div>
 
   <div id="mn">
     <nav class="menu">
       <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Hexekta</a>
+        <li><a href="#" onclick="showSection('accueil')">Accueil</a></li>
+        <li>
+          <a href="#">Projet</a>
           <ul class="submenu">
-            <li><a href="#">Galerie</a></li>
-            <li><a href="#">Détail</a></li>
+            <li><a href="#" onclick="showSection('hexekta')">Hexekta</a></li>
+            <li><a href="#" onclick="showSection('labs')">Labs</a></li>
+            <li><a href="#" onclick="showSection('roadmap')">Roadmap</a></li>
           </ul>
         </li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" onclick="showSection('apropos')">À propos</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
       </ul>
     </nav>
   </div>
 
   <div id="ct">
-    <h2>À propos du projet</h2>
-    <p>DigiRelik est un projet combinant art, blockchain et mémoire. Chaque artefact est unique et représenté en NFT sur la blockchain eCash. Le projet vise à créer une archive éternelle, libre et distribuée.</p>
-
-    <h3>Collections disponibles</h3>
-    <ul>
-      <li>Hexekta</li>
-      <li>DeadCanTalk</li>
-      <li>DigiArt</li>
-      <li>ShadowCore</li>
-      <li>Memor-X</li>
-      <li>Codex Lux</li>
-    </ul>
+    <section id="accueil" class="section active">
+      <h2>Bienvenue sur DigiRelik</h2>
+      <p>DigiRelik est un projet numérique dédié à la préservation d'artefacts NFT uniques. Notre première collection, <strong>Hexekta</strong>, plonge dans un univers cyber-mythologique riche en symboles et en récits.</p>
+    </section>
+    <section id="hexekta" class="section">
+      <h2>Hexekta</h2>
+      <p>La collection Hexekta présente des artefacts NFT qui encapsulent des fragments de mémoire numérique. Chaque objet est unique et lié à un pouvoir symbolique spécifique. Galerie disponible via la page <a href="hexekta.html">Hexekta</a>.</p>
+    </section>
+    <section id="labs" class="section">
+      <h2>Labs</h2>
+      <p>Découvrez nos futures collections NFT comme DeadCanTalk, DigiArt, ShadowCore, Memor-X et Codex Lux dans notre laboratoire créatif.</p>
+    </section>
+    <section id="roadmap" class="section">
+      <h2>Roadmap</h2>
+      <p>Notre feuille de route inclut le développement des outils de mint, l'intégration blockchain XEC/DGB, et l'expansion vers de nouveaux univers artistiques.</p>
+    </section>
+    <section id="apropos" class="section">
+      <h2>À propos</h2>
+      <p>DigiRelik est né de la volonté de fusionner art, mémoire et technologie. Chaque collection explore une thématique spécifique, dans un style visuel immersif et codé.</p>
+    </section>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Pour toute question ou proposition de collaboration, contactez-nous à l’adresse suivante : contact@digirelik.org</p>
+    </section>
   </div>
 
   <div id="ft">
-    <small>DigiRelik – Une création de Jean-Yves Cornet – 2025</small>
+    <footer>
+      <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
+    </footer>
   </div>
 </body>
 </html>
