@@ -1,143 +1,44 @@
-/* Container en grille 2 colonnes responsive */
-#artefacts-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
+/* === option.css === */
+/* Place ici toutes tes options et surcouches visuelles personnalisées */
+
+/* Effet néon plus intense au survol des artefacts */
+.artifact-box:hover, .project-box:hover {
+  box-shadow: 0 0 16px #00ffee77, 0 0 32px #00ffee44;
+  border-color: #00ffee;
+  transition: box-shadow 0.3s, border-color 0.3s;
 }
 
-/* Carte de chaque artefact */
-.artefact-card {
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid #00ffff;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.2s ease;
+/* Animation d’apparition sur les titres */
+.site-title, h2, h3 {
+  animation: neonIn 1s cubic-bezier(.68,-0.55,.27,1.55) both;
 }
 
-.artefact-card:hover {
-  transform: scale(1.03);
+@keyframes neonIn {
+  0%   { text-shadow: none; color: #111;}
+  80%  { text-shadow: 0 0 8px #00ffee77, 0 0 24px #00ffee55; color: #00ffee;}
+  100% { text-shadow: 0 0 8px #00ffeecc, 0 0 24px #00ffee88; color: #00ffee;}
 }
 
-/* Lien qui englobe l’image + texte */
-.artefact-tile {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  align-items: center;
-  padding: 0.5rem;
-  color: inherit;
+/* Lien accentué */
+a {
+  color: #00ffee;
+  text-decoration: underline dotted;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 4px #00ffee, 0 0 16px #00ffee88;
 }
 
-/* Image carrée */
-.artefact-img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 0.5rem;
+/* Smooth fade-in pour chaque section affichée */
+.section.active {
+  animation: fadeInOpt 0.8s cubic-bezier(.39,.575,.565,1) both;
 }
 
-/* Texte du titre */
-.artefact-txt h3 {
-  font-size: 1rem;
-  color: #00ffff;
-  margin: 0;
-  text-align: center;
+@keyframes fadeInOpt {
+  0%   { opacity: 0; filter: blur(8px);}
+  80%  { opacity: 1; filter: blur(2px);}
+  100% { opacity: 1; filter: blur(0);}
 }
 
-/* Prix en dessous */
-.artefact-price {
-  font-size: 0.85rem;
-  color: #ccc;
-  text-align: center;
-}
-.artefact-detail-card {
-  max-width: 370px;
-  margin: 40px auto 40px auto;
-  padding: 30px 24px 22px 24px;
-  background: #12181f;
-  border: 2px solid #00ffff;
-  border-radius: 18px;
-  box-shadow: 0 0 22px 2px #00ffff50;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: artefactFadeIn 0.8s;
-}
-
-.artefact-detail-card img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 1.5px solid #00ffff;
-  margin-bottom: 20px;
-  box-shadow: 0 0 18px 2px #00ffff30;
-}
-
-.artefact-detail-card h2 {
-  color: #00ffff;
-  font-size: 2em;
-  margin: 0 0 10px 0;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-
-.artefact-detail-card p {
-  color: #d2f8ff;
-  font-size: 1.05em;
-  text-align: center;
-  margin: 6px 0 8px 0;
-}
-
-.artefact-detail-card .price {
-  color: #ffde59;
-  font-weight: bold;
-  font-size: 1.2em;
-  margin: 14px 0 18px 0;
-  background: #02191d;
-  padding: 6px 18px;
-  border-radius: 11px;
-  border: 1px solid #00ffff;
-  box-shadow: 0 0 7px 1px #00ffff44;
-}
-
-.artefact-detail-card .buy-btn {
-  display: inline-block;
-  background: #00ffff;
-  color: #091118;
-  font-weight: bold;
-  border-radius: 11px;
-  padding: 11px 30px;
-  font-size: 1em;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 0 12px 1px #00ffff44;
-  text-decoration: none;
-  transition: background 0.18s;
-}
-.artefact-detail-card .buy-btn:hover {
-  background: #0cf7ea;
-}
-
-@media (max-width: 500px) {
-  .artefact-detail-card {
-    max-width: 96vw;
-    padding: 10vw 2vw;
-  }
-  .artefact-detail-card img {
-    width: 65vw;
-    height: 65vw;
-    min-width: 130px;
-    min-height: 130px;
-    max-width: 92vw;
-    max-height: 92vw;
-  }
-}
-@keyframes artefactFadeIn {
-  0% { opacity: 0; transform: translateY(16px);}
-  100% { opacity: 1; transform: translateY(0);}
-}
+/* Ajoute ici tes propres classes, surcharges ou responsive tweaks */
