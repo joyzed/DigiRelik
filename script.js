@@ -1,4 +1,4 @@
-// Version : v2.0.4
+// script.js – vID2.2.0.0 – 2025-05-24T14:32:00Z
 
 document.addEventListener("DOMContentLoaded", () => {
   const artefactList = document.getElementById("artefact-list");
