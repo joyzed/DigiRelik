@@ -56,3 +56,17 @@ ToDo pour v1a.0.0.2 et suivants :
 - [x] Généré data.json avec 14 artefacts
 - [x] Généré col.json avec 5 collections
 - [x] script.js avec support window.location.hash
+
+[✓] v1a.0.0.4 – Affichage dynamique JSON
+- [x] Affichage liste artefacts dans hexekta.html
+- [x] Affichage artefact par ID dans art.html
+- [x] Affichage des collections dans labs.html
+- [x] script.js : tout géré automatiquement par JSON
+
+[✓] v1a.0.0.4b – Version enrichie (branche /rich/)
+- [x] Création du dossier /rich/ avec tous les fichiers HTML
+- [x] Ajout de 5 pages dédiées à l’univers Hexekta : genese, symboles, protocoles, echoes, construct
+- [x] Contenu automatique injecté dans toutes les pages enrichies
+- [x] Menu Hexekta ajouté dans /rich/hexekta.html
+- [x] Lien ajouté dans hexekta.html principal vers la branche enrichie
+- [x] Ajout d’un glossaire enrichi (/rich/glossaire.html)

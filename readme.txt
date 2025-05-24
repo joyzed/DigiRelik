@@ -39,3 +39,9 @@ Date : 24 mai 2025 – Heure : 20:30
 - data.json : 14 artefacts Hexekta complets
 - col.json : 5 collections en projet
 - script.js : ajout du support de navigation via hash (#section)
+
+[✓] v1a.0.0.4 – JSON dynamique et affichage automatique
+- hexekta.html : liste des artefacts chargée depuis data.json
+- art.html : détail d’un artefact par ID depuis data.json
+- labs.html : affichage des collections depuis col.json
+- script.js : fonctionnalités complètes de chargement dynamique
