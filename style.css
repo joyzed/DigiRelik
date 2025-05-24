@@ -1,125 +1,103 @@
-/* style.css – DigiRelik thème sombre bleu fluo – version finale */
-
-/* Reset et base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* style.css – v2.0.0 */
 
 body {
-  background-color: #000;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
   color: #00ffff;
   font-family: 'Orbitron', sans-serif;
-  line-height: 1.5;
-  font-size: 16px;
-  min-height: 100vh;
 }
 
-a {
-  color: #00ffff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Menu */
 header {
-  background-color: #001f1f;
-  padding: 1rem;
+  background-color: #111;
+  padding: 1em;
   text-align: center;
-  border-bottom: 1px solid #00ffff;
+  border-bottom: 2px solid #00ffff;
 }
 
-.menu {
+.site-title {
+  margin: 0;
+  font-size: 2em;
+  color: #00ffff;
+}
+
+nav.menu {
+  margin-top: 1em;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1em;
 }
 
 .menu-box {
+  background-color: #1a1a1a;
+  border: 1px solid #00ffff;
+  border-radius: 12px;
+  padding: 0.5em 1em;
   cursor: pointer;
-  padding: 0.5rem 1rem;
-  border: 1px solid transparent;
-  transition: border-color 0.3s ease;
-  user-select: none;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.menu-box:hover,
-.menu-box.active {
-  border-color: #00ffff;
+.menu-box:hover {
+  background-color: #00ffff;
+  color: #0d0d0d;
+  transform: scale(1.05);
 }
 
-/* Sections */
+main {
+  padding: 2em;
+}
+
 .section {
   display: none;
-  padding: 2rem;
-  max-width: 960px;
-  margin: 1rem auto;
 }
 
 .section.active {
   display: block;
 }
 
-/* Titres */
-h1, h2, h3 {
-  color: #00ffff;
-  margin-bottom: 1rem;
+.artefact-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5em;
 }
 
-/* Boutons et liens principaux */
-.cta-link {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  border: 1px solid #00ffff;
-  border-radius: 6px;
-  color: #00ffff;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  margin-top: 1rem;
-}
-
-.cta-link:hover {
-  background-color: rgba(0, 255, 255, 0.15);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  color: #006666;
-  border-top: 1px solid #00ffff;
-  margin-top: 2rem;
-}
-
-/* Artefacts list */
 .artefact-card {
+  background-color: #1a1a1a;
   border: 1px solid #00ffff;
-  border-radius: 8px;
-  padding: 1rem;
+  border-radius: 16px;
+  padding: 1em;
   text-align: center;
-  margin-bottom: 1rem;
-  transition: box-shadow 0.3s ease;
+  transition: transform 0.3s, border-color 0.3s;
 }
 
 .artefact-card:hover {
-  box-shadow: 0 0 15px #00ffff;
+  transform: scale(1.03);
+  border-color: #33ffff;
 }
 
 .artefact-card img {
   max-width: 100%;
-  border-radius: 6px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1em;
 }
 
-/* Responsive */
-@media (min-width: 600px) {
-  .menu {
-    gap: 3rem;
-  }
-  .artefact-card {
-    margin-bottom: 1.5rem;
-  }
+.artefact-card h3 {
+  margin: 0.5em 0 0.2em;
+  font-size: 1.2em;
+  color: #00ffff;
+}
+
+.artefact-card p {
+  font-size: 0.95em;
+  color: #ccc;
+  margin: 0.2em 0;
+}
+
+footer {
+  margin-top: 3em;
+  padding: 1em;
+  text-align: center;
+  color: #666;
+  border-top: 1px solid #00ffff;
 }

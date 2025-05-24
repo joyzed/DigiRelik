@@ -1,100 +1,63 @@
-<!-- mint.html – v1.0.1 – 2025-05-24 – Mise à jour avec infos actuelles -->
+<!-- Version : v2.0.2 -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mint – DigiRelik</title>
+  <title>Mint – Hexekta</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="option.css" />
-  <style>
-    body {
-      background-color: #000;
-      color: #ccc;
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      padding: 1rem;
-      text-align: center;
-      color: #00ffff;
-    }
-    nav a {
-      margin: 0 10px;
-      color: #00ffff;
-      text-decoration: none;
-    }
-    nav a.active {
-      font-weight: bold;
-    }
-    main {
-      max-width: 860px;
-      margin: 1rem auto;
-      padding: 1.5rem;
-      background-color: rgba(0, 255, 255, 0.02);
-      border-radius: 12px;
-      border: 1px solid rgba(0, 255, 255, 0.1);
-    }
-    h2 {
-      color: #00ffff;
-      margin-bottom: 1rem;
-    }
-    p {
-      margin-bottom: 1rem;
-      line-height: 1.5;
-    }
-    .mint-link {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
-      background-color: rgba(0, 255, 255, 0.1);
-      border: 1px solid #00ffff;
-      border-radius: 6px;
-      color: #00ffff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.2s ease;
-    }
-    .mint-link:hover {
-      background-color: rgba(0, 255, 255, 0.2);
-    }
-  </style>
 </head>
-<body>
-  <header>
-    <h1>DigiRelik – Mint d’Artefacts</h1>
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="hexekta.html">Projet</a>
-      <a href="drk.html">DRK</a>
-      <a href="mint.html" class="active">Mint</a>
-      <a href="trade.html">Trade</a>
+<body style="background-color: #000; font-family: sans-serif; color: #cccccc; margin: 0; padding: 0;">
+
+  <header style="padding: 1rem; text-align: center;">
+    <h1 style="color: #00ffff;">DigiRelik</h1>
+    <nav style="margin-top: 1rem;">
+      <a href="index.html" style="margin: 0 10px; color: #00ffff;">Accueil</a>
+      <a href="hexekta.html" style="margin: 0 10px; color: #00ffff;">Projet</a>
+      <a href="drk.html" style="margin: 0 10px; color: #00ffff;">DRK</a>
+      <a href="mint.html" style="margin: 0 10px; color: #00ffff; font-weight: bold;">Mint</a>
+      <a href="contact.html" style="margin: 0 10px; color: #00ffff;">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <h2>Mintez votre artefact Hexekta</h2>
+  <div style="text-align:center; font-size: 0.85rem; color: #00ffff; margin-bottom: 1rem;">
+    Version : v2.0.2
+  </div>
+
+  <main style="max-width: 860px; margin: 0 auto; padding: 1.5rem;">
+    <h2 style="color: #00ffff;">Mint un artefact Hexekta</h2>
+    <p style="font-style: italic; color: #00ffff;">Inscrire la mémoire, une transaction à la fois.</p>
+
     <p>
-      Chaque artefact Hexekta est unique et certifié via la blockchain <strong>eCash (XEC)</strong>  
-      avec une preuve d’authenticité garantie sur <strong>DigiByte (DGB)</strong>.
+      Le mint est le processus qui permet de transformer un artefact en NFT inscrit sur la blockchain.  
+      En effectuant cette opération, vous devenez officiellement propriétaire de l'objet, et son existence est gravée de façon permanente.
     </p>
+
     <p>
-      Pour mint, cliquez sur le lien correspondant à l’artefact souhaité,  
-      vous serez redirigé vers l’interface de transaction sécurisée.
+      La blockchain utilisée est <strong>eCash (XEC)</strong> pour son efficacité et ses frais minimes.  
+      Chaque mint est aussi certifié par <strong>DigiByte (DGB)</strong> via un timestamp, garantissant son authenticité et sa traçabilité.
     </p>
+
     <p>
-      Le mint est soumis à disponibilité et aux frais liés aux blockchains XEC et DGB.
+      Le prix de mint est fixé à <strong>300 XEC</strong> pour chaque artefact.  
+      Des bonus en <a href="drk.html" style="color:#00ffff;">DRK</a> pourront être appliqués aux premiers participants.
     </p>
+
+    <div style="text-align:center; margin: 2rem 0;">
+      <img src="qr-example.png" alt="QR code de mint" style="width:160px;height:160px;" />
+      <p style="margin-top: 1rem;">
+        <a href="https://example.com/mint/hexekta" target="_blank" style="color:#00ffff;">→ Mint maintenant</a>
+      </p>
+    </div>
+
     <p>
-      Découvrez notre collection <a href="hexekta.html" class="mint-link">Hexekta – Galerie Artefacts</a>.
-    </p>
-    <p>
-      Pour toute question ou assistance, contactez-nous à <a href="mailto:jy.cornet@example.com" class="mint-link">support@digirelik.com</a>.
+      Une fois minté, votre artefact sera visible publiquement dans la collection, mais son statut vous appartiendra.  
+      Aucun mint automatique n’est déclenché. Le processus est volontaire, individuel, traçable.
     </p>
   </main>
 
-  <footer>
+  <footer style="text-align: center; padding: 1rem; color: #666;">
     &copy; 2025 DigiRelik – Tous droits réservés
   </footer>
 </body>

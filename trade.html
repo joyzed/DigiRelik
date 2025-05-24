@@ -1,4 +1,4 @@
-<!-- trade.html – v1.0.3 – 2025-05-24 – Intégration spot.js pour gestion cours -->
+<!-- Version : v1.0.0 -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -81,8 +81,6 @@
       <div class="rate-block"><span class="label">USD / EUR :</span> <span class="value" id="usd-eur">Chargement...</span></div>
       <div class="rate-block"><span class="label">1 XEC → USD :</span> <span class="value" id="xec-usd">Chargement...</span></div>
       <div class="rate-block"><span class="label">1 DGB → USD :</span> <span class="value" id="dgb-usd">Chargement...</span></div>
-      <div class="rate-block"><span class="label">1 DRK → XEC :</span> <span class="value" id="drk-xec">Chargement...</span></div>
-      <div class="rate-block"><span class="label">1 DRK → DGB :</span> <span class="value" id="drk-dgb">Chargement...</span></div>
     </div>
   </main>
 
@@ -90,6 +88,39 @@
     &copy; 2025 DigiRelik – Tous droits réservés
   </footer>
 
-  <script src="spot.js" defer></script>
+  <script>
+    async function fetchRates() {
+      try {
+        // Taux USD -> EUR (ex: exchangerate-api.com)
+        const usdEurResp = await fetch('https://api.exchangerate.host/latest?base=USD&symbols=EUR');
+        const usdEurData = await usdEurResp.json();
+        const usdEur = usdEurData.rates.EUR.toFixed(4);
+        document.getElementById('usd-eur').textContent = usdEur;
+
+        // Prix XEC en USD (coingecko)
+        const xecResp = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=ecash&vs_currencies=usd');
+        const xecData = await xecResp.json();
+        const xecUsd = xecData.ecash.usd.toFixed(6);
+        document.getElementById('xec-usd').textContent = xecUsd;
+
+        // Prix DGB en USD (coingecko)
+        const dgbResp = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=digibyte&vs_currencies=usd');
+        const dgbData = await dgbResp.json();
+        const dgbUsd = dgbData.digibyte.usd.toFixed(6);
+        document.getElementById('dgb-usd').textContent = dgbUsd;
+
+      } catch (error) {
+        console.error('Erreur chargement cours:', error);
+        document.getElementById('usd-eur').textContent = 'Erreur';
+        document.getElementById('xec-usd').textContent = 'Erreur';
+        document.getElementById('dgb-usd').textContent = 'Erreur';
+      }
+    }
+
+    // Chargement initial
+    fetchRates();
+    // Actualisation toutes les 60 secondes
+    setInterval(fetchRates, 60000);
+  </script>
 </body>
 </html>

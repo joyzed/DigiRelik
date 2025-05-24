@@ -1,1 +1,137 @@
-/* Placeholder pour option.css */
+/* Version : v2.1.0.2 */
+
+/* Couleur de texte par défaut */
+body, p, li, h1, h2, h3, h4, h5, h6, a {
+  color: #cccccc;
+}
+
+/* Sections */
+.section {
+  padding: 1.5rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  color: #00ffff;
+}
+
+.section p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.section a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+/* Slogan */
+.slogan {
+  font-style: italic;
+  color: #00ffff;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Blockquote */
+blockquote {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: rgba(0, 255, 255, 0.03);
+  border-left: 4px solid #00ffff;
+  font-style: italic;
+  color: #aaffff;
+}
+
+/* Masquer la version */
+.version-tag {
+  display: none;
+}
+
+/* Galerie artefacts */
+#artefact-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.artefact-card {
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid #00ffff;
+  border-radius: 12px;
+  padding: 0.5rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.artefact-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.artefact-card h3 {
+  margin: 0.5rem 0 0.3rem;
+  color: #00ffff;
+}
+
+.artefact-card p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #aaa;
+}
+
+/* Mise en page détaillée de art.html */
+#artefact-detail {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: rgba(0, 255, 255, 0.02);
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.05);
+  text-align: center;
+}
+
+#artefact-detail img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 255, 255, 0.1);
+}
+
+#artefact-detail h2 {
+  margin-top: 0;
+  color: #00ffff;
+}
+
+#artefact-detail p {
+  margin: 0.75rem 0;
+  line-height: 1.5;
+}
+
+#artefact-detail .cta-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: rgba(0, 255, 255, 0.1);
+  border: 1px solid #00ffff;
+  border-radius: 6px;
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+#artefact-detail .cta-link:hover {
+  background-color: rgba(0, 255, 255, 0.2);
+}
