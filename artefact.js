@@ -7,9 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const card = document.createElement('div');
         card.className = 'artefact-card';
         card.innerHTML = `
-          <img src="DigiRelik.jpg" alt="${artefact.nom}" class="artefact-img">
-          <h2>${artefact.nom}</h2>
-          <p>${artefact.description}</p>
+          <a href="art.html?id=${artefact.id}">
+            <img src="DigiRelik.jpg" alt="${artefact.nom}" class="artefact-img">
+            <h2>${artefact.nom}</h2>
+            <p>${artefact.description}</p>
+          </a>
         `;
         gallery.appendChild(card);
       });
