@@ -1,104 +1,49 @@
-/* style.css – v1.0.0 – 24/05/2025 12:01:18 – Version initiale drk_main */
-/* style.css – v2.0.0 */
-
+/* style.css – v3.0.0 – 24/05/2025 22:00:00 – Thème complet DigiRelik */
 body {
   margin: 0;
-  padding: 0;
-  background-color: #0d0d0d;
-  color: #00ffff;
   font-family: 'Orbitron', sans-serif;
-}
-
-header {
-  background-color: #111;
-  padding: 1em;
-  text-align: center;
-  border-bottom: 2px solid #00ffff;
-}
-
-.site-title {
-  margin: 0;
-  font-size: 2em;
+  background-color: #000;
   color: #00ffff;
 }
-
-nav.menu {
-  margin-top: 1em;
+header {
+  background: #111;
+  padding: 1rem;
+  text-align: center;
+}
+.logo {
+  font-size: 2rem;
+}
+.menu ul {
+  list-style: none;
   display: flex;
   justify-content: center;
-  gap: 1em;
+  gap: 2rem;
+  padding: 0;
+  margin: 1rem 0;
 }
-
-.menu-box {
-  background-color: #1a1a1a;
-  border: 1px solid #00ffff;
-  border-radius: 12px;
-  padding: 0.5em 1em;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+.menu a {
+  text-decoration: none;
+  color: #00ffff;
+  transition: 0.3s;
 }
-
-.menu-box:hover {
-  background-color: #00ffff;
-  color: #0d0d0d;
-  transform: scale(1.05);
+.menu a:hover {
+  color: #fff;
 }
-
-main {
-  padding: 2em;
-}
-
 .section {
   display: none;
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-in;
 }
-
 .section.active {
   display: block;
 }
-
-.artefact-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5em;
-}
-
-.artefact-card {
-  background-color: #1a1a1a;
-  border: 1px solid #00ffff;
-  border-radius: 16px;
-  padding: 1em;
-  text-align: center;
-  transition: transform 0.3s, border-color 0.3s;
-}
-
-.artefact-card:hover {
-  transform: scale(1.03);
-  border-color: #33ffff;
-}
-
-.artefact-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 1em;
-}
-
-.artefact-card h3 {
-  margin: 0.5em 0 0.2em;
-  font-size: 1.2em;
-  color: #00ffff;
-}
-
-.artefact-card p {
-  font-size: 0.95em;
-  color: #ccc;
-  margin: 0.2em 0;
-}
-
 footer {
-  margin-top: 3em;
-  padding: 1em;
+  background: #111;
   text-align: center;
-  color: #666;
-  border-top: 1px solid #00ffff;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
