@@ -1,161 +1,54 @@
-/* Complément CSS DigiRelik – V1.1 */
-
-body {
-  background-color: #0a0a0a;
-  color: #e0f7ff;
-  font-family: 'Orbitron', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: #111;
-  border-bottom: 1px solid #00ffff55;
-  box-shadow: 0 2px 10px #00ffff22;
-}
-
-h1 {
-  font-size: 2.2rem;
-  color: #00ffff;
-  margin: 0;
-}
-
-footer .prod {
-  text-align: center;
-  padding: 2rem 0;
-  font-size: 0.9rem;
-  color: #00ffffaa;
-}
-
-/* Galerie : hexekta.html */
-
-.grid-2block {
+/* Container en grille 2 colonnes responsive */
+#artefacts-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
 }
 
+/* Carte de chaque artefact */
 .artefact-card {
-  background-color: #101010;
-  border: 1px solid #00ffffaa;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #00ffff;
   border-radius: 10px;
-  box-shadow: 0 0 15px #00ffff33;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1.5rem;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.2s ease;
 }
 
 .artefact-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 20px #00ffff88;
+  transform: scale(1.03);
 }
 
-.artefact-card img {
+/* Lien qui englobe l’image + texte */
+.artefact-tile {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+  padding: 0.5rem;
+  color: inherit;
+}
+
+/* Image carrée */
+.artefact-img {
   width: 100%;
-  max-width: 250px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.artefact-card h2 {
-  font-size: 1.4rem;
-  color: #00ffff;
+  border-radius: 6px;
   margin-bottom: 0.5rem;
 }
 
-.artefact-card p {
-  color: #ccf8ff;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-}
-
-.artefact-card a.lien-artefact {
-  color: #00ffff;
-  font-weight: bold;
-  text-decoration: none;
-  margin-top: 1rem;
-}
-
-.artefact-card a.lien-artefact:hover {
-  text-decoration: underline;
-  color: #00cccc;
-}
-
-/* Fiche individuelle : art.html */
-
-.artefact-container {
-  max-width: 850px;
-  margin: auto;
-  padding: 2rem;
-  background: #111;
-  border-radius: 12px;
-  box-shadow: 0 0 20px #00ffff55;
-  text-align: right;
-  border: 1px solid #00ffff55;
-}
-
-.artefact-container p {
-  margin: 0.8rem 0;
+/* Texte du titre */
+.artefact-txt h3 {
   font-size: 1rem;
-  color: #d0faff;
-}
-
-.artefact-container p strong {
   color: #00ffff;
-}
-
-.artefact-img-large {
-  width: 100%;
-  max-width: 300px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 8px;
-  margin: 0 auto 1.5rem;
-  display: block;
-}
-
-.actions {
-  margin: 2rem 0 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 1rem;
-}
-
-.btn {
-  background-color: #00ffff;
-  color: #000;
-  padding: 0.75rem 1.3rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  display: inline-block;
+  margin: 0;
   text-align: center;
-  min-width: 200px;
 }
 
-.btn:hover {
-  background-color: #00cccc;
-}
-
-.ipfs-qr {
-  margin-top: 2rem;
-  text-align: right;
-}
-
-.ipfs-qr img {
-  margin-top: 0.5rem;
-  border-radius: 6px;
+/* Prix en dessous */
+.artefact-price {
+  font-size: 0.85rem;
+  color: #ccc;
+  text-align: center;
 }
