@@ -1,3 +1,4 @@
+<!-- trade.html – v1.0.1 – 24/05/2025 12:15:57 – Ajout de spot.js, affichage spot XEC/DGB, tickers DRK/XEC DGB BTC -->
 <!-- Version : v1.0.0 -->
 <!DOCTYPE html>
 <html lang="fr">
@@ -79,6 +80,11 @@
     <h2>Cours en temps réel</h2>
     <div id="rates">
       <div class="rate-block"><span class="label">USD / EUR :</span> <span class="value" id="usd-eur">Chargement...</span></div>
+      <div class="rate-block"><span class="label">DRK / XEC :</span> <span class="value" id="drk-xec">Chargement...</span></div>
+      <div class="rate-block"><span class="label">DRK / DGB :</span> <span class="value" id="drk-dgb">Chargement...</span></div>
+      <div class="rate-block"><span class="label">DRK / BTC :</span> <span class="value" id="drk-btc">Chargement...</span></div>
+      <div class="rate-block"><span class="label">XEC Spot :</span> <span class="value" id="spot-xec">Chargement...</span></div>
+      <div class="rate-block"><span class="label">DGB Spot :</span> <span class="value" id="spot-dgb">Chargement...</span></div>
       <div class="rate-block"><span class="label">1 XEC → USD :</span> <span class="value" id="xec-usd">Chargement...</span></div>
       <div class="rate-block"><span class="label">1 DGB → USD :</span> <span class="value" id="dgb-usd">Chargement...</span></div>
     </div>
@@ -122,5 +128,6 @@
     // Actualisation toutes les 60 secondes
     setInterval(fetchRates, 60000);
   </script>
+  <script defer src="spot.js"></script>
 </body>
 </html>

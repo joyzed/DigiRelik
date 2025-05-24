@@ -1,48 +1,67 @@
-// spot.js – v1.0.0
+// spot.js – v1.0.1 – 24/05/2025 12:13:53 – Initialisation du script spot pour données de marché
 
-async function fetchRates() {
+async function fetchSpotRates() {
   try {
-    // USD -> EUR (local API)
-    const usdEurResp = await fetch('http://localhost/api/exchange/usd-eur');
-    const usdEurData = await usdEurResp.json();
-    const usdEur = usdEurData.rate.toFixed(4);
-    document.getElementById('usd-eur').textContent = usdEur;
+    const [xec, dgb] = await Promise.all([
+      fetch('https://api.coingecko.com/api/v3/simple/price?ids=ecash&vs_currencies=usd'),
+      fetch('https://api.coingecko.com/api/v3/simple/price?ids=digibyte&vs_currencies=usd')
+    ]);
 
-    // XEC -> USD (local API)
-    const xecResp = await fetch('http://localhost/api/price/xec-usd');
-    const xecData = await xecResp.json();
-    const xecUsd = xecData.price.toFixed(6);
-    document.getElementById('xec-usd').textContent = xecUsd;
+    const xecUsd = (await xec.json()).ecash.usd.toFixed(6);
+    const dgbUsd = (await dgb.json()).digibyte.usd.toFixed(6);
 
-    // DGB -> USD (local API)
-    const dgbResp = await fetch('http://localhost/api/price/dgb-usd');
-    const dgbData = await dgbResp.json();
-    const dgbUsd = dgbData.price.toFixed(6);
-    document.getElementById('dgb-usd').textContent = dgbUsd;
+    console.log("XEC/USD:", xecUsd);
+    console.log("DGB/USD:", dgbUsd);
 
-    // DRK -> USD (local API)
-    const drkResp = await fetch('http://localhost/api/price/drk-usd');
-    const drkData = await drkResp.json();
-    const drkUsd = drkData.price;
+    // Exemple d'affichage dans des éléments HTML
+    const xecEl = document.getElementById('spot-xec');
+    const dgbEl = document.getElementById('spot-dgb');
+    if (xecEl) xecEl.textContent = xecUsd;
+    if (dgbEl) dgbEl.textContent = dgbUsd;
 
-    if (drkUsd) {
-      const drkXec = (drkUsd / xecUsd).toFixed(6);
-      document.getElementById('drk-xec').textContent = drkXec;
-      const drkDgb = (drkUsd / dgbUsd).toFixed(6);
-      document.getElementById('drk-dgb').textContent = drkDgb;
-    } else {
-      document.getElementById('drk-xec').textContent = 'N/A';
-      document.getElementById('drk-dgb').textContent = 'N/A';
-    }
-
-  } catch (error) {
-    console.error('Erreur chargement cours:', error);
-    ['usd-eur', 'xec-usd', 'dgb-usd', 'drk-xec', 'drk-dgb'].forEach(id => {
-      document.getElementById(id).textContent = 'Erreur';
-    });
+  } catch (e) {
+    console.error("Erreur spot.js :", e);
   }
 }
 
-// Chargement initial et actualisation toutes les 60 secondes
-fetchRates();
-setInterval(fetchRates, 60000);
+// Lancer au chargement
+fetchSpotRates();
+setInterval(fetchSpotRates, 60000);
+
+
+// Ajout des ratios DRK
+function updateDRKTickers(xecUsd, dgbUsd) {
+  const drkValue = 1; // 1 DRK de base
+  const drkXec = (drkValue / xecUsd).toFixed(2);
+  const drkDgb = (drkValue / dgbUsd).toFixed(2);
+  const drkBtc = (drkValue / 67000).toFixed(8); // base BTC fictive
+
+  const elXec = document.getElementById('drk-xec');
+  const elDgb = document.getElementById('drk-dgb');
+  const elBtc = document.getElementById('drk-btc');
+
+  if (elXec) elXec.textContent = drkXec;
+  if (elDgb) elDgb.textContent = drkDgb;
+  if (elBtc) elBtc.textContent = drkBtc;
+}
+
+// Injecter les nouvelles valeurs après récupération
+fetchSpotRates = async function () {
+  try {
+    const [xec, dgb] = await Promise.all([
+      fetch('https://api.coingecko.com/api/v3/simple/price?ids=ecash&vs_currencies=usd'),
+      fetch('https://api.coingecko.com/api/v3/simple/price?ids=digibyte&vs_currencies=usd')
+    ]);
+
+    const xecUsd = (await xec.json()).ecash.usd.toFixed(6);
+    const dgbUsd = (await dgb.json()).digibyte.usd.toFixed(6);
+
+    document.getElementById('spot-xec').textContent = xecUsd;
+    document.getElementById('spot-dgb').textContent = dgbUsd;
+
+    updateDRKTickers(xecUsd, dgbUsd);
+
+  } catch (e) {
+    console.error("Erreur spot.js :", e);
+  }
+}

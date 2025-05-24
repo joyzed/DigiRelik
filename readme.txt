@@ -1,3 +1,4 @@
+# readme.txt – v1.0.0 – 24/05/2025 12:01:18 – Version initiale drk_main
 
 # Version : v2.0.2
 
