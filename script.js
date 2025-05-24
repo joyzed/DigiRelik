@@ -70,3 +70,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (containerDetail) containerDetail.textContent = "Erreur lors du chargement de l’artefact.";
     });
 });
+// Exemple d'injection dans #artefact-detail, pour un artefact récupéré dans data.json
+document.getElementById('artefact-detail').innerHTML = `
+  <img src="DigiRelik.png" alt="Nom Artefact" />
+  <h2>Nom de l'Artefact</h2>
+  <p>Description complète de l’artefact, telle que dans le JSON.</p>
+  <div class="price">Prix : 123 XEC</div>
+  <a class="buy-btn" href="https://xec.example.com/mint/xyz" target="_blank">Acheter / Mint</a>
+`;
