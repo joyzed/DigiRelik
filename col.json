@@ -3,17 +3,19 @@
     "id": 1,
     "nom": "DeadCanTalk",
     "ticker": "DCT",
-    "type": "Exp\u00e9rience IA",
+    "type": "Expérience IA",
     "nombre": 666,
-    "description": "Des NFT qui permettent de 'parler avec les morts' via une interface de discussion IA. Dialogue \u00e9volutif, symbolique, parfois troublant."
+    "description": "Des NFT qui permettent de 'parler avec les morts' via une interface de discussion IA. Dialogue évolutif, symbolique, parfois troublant.",
+    "drkid": 0
   },
   {
     "id": 2,
     "nom": "DigiArt",
     "ticker": "DAR",
-    "type": "Art num\u00e9rique VIP",
+    "type": "Art numérique VIP",
     "nombre": 33,
-    "description": "\u0152uvres num\u00e9riques issues de 10 artistes peintres. Chaque NFT est promu dans des \u00e9v\u00e9nements VIP r\u00e9els."
+    "description": "Œuvres numériques issues de 10 artistes peintres. Chaque NFT est promu dans des événements VIP réels.",
+    "drkid": 0
   },
   {
     "id": 3,
@@ -21,15 +23,17 @@
     "ticker": "SHC",
     "type": "Artefacts obscurs",
     "nombre": 128,
-    "description": "Objets num\u00e9riques li\u00e9s aux secrets du web et aux donn\u00e9es cach\u00e9es. M\u00e9caniques \u00e9volutives selon le wallet du d\u00e9tenteur."
+    "description": "Objets numériques liés aux secrets du web et aux données cachées. Mécaniques évolutives selon le wallet du détenteur.",
+    "drkid": 0
   },
   {
     "id": 4,
     "nom": "Memor-X",
     "ticker": "MXR",
-    "type": "M\u00e9moire d\u00e9centralis\u00e9e",
+    "type": "Mémoire décentralisée",
     "nombre": 256,
-    "description": "Fragments cryptographiques d\u2019histoires num\u00e9riques \u00e0 d\u00e9verrouiller avec des cl\u00e9s sp\u00e9cifiques sur la blockchain DigiByte."
+    "description": "Fragments cryptographiques d’histoires numériques à déverrouiller avec des clés spécifiques sur la blockchain DigiByte.",
+    "drkid": 0
   },
   {
     "id": 5,
@@ -37,6 +41,7 @@
     "ticker": "CDL",
     "type": "Manuscrits interactifs",
     "nombre": 77,
-    "description": "Pages lumineuses d\u2019un codex mystique, contenant des savoirs, \u00e9nigmes ou symboles rares \u00e0 collectionner et assembler."
+    "description": "Pages lumineuses d’un codex mystique, contenant des savoirs, énigmes ou symboles rares à collectionner et assembler.",
+    "drkid": 0
   }
 ]

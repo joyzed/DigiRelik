@@ -1,33 +1,35 @@
-DigiRelik – Version 1.0.1.2
+DigiRelik – Version 1.0.1.3
 ===========================
 
-Date : 24/05/2025 15:21:31
+Date : 24/05/2025 16:07:01
 
-Modifications apportées :
+Objectifs :
+- Uniformisation et enrichissement du fichier col.json
+  → Structure alignée avec data.json
+  → Ajout des 6 collections NFT officielles (Hexekta + 5 nouvelles)
+  → Ajout du champ "drkid" calculé automatiquement
 
-1. Reformatage complet de mint.html
-   - Reprise du head, menu, footer depuis index.html
-   - Conservation du <main> original
-   - Nettoyage et conformité avec l’ossature standard
+- Mise à jour de data.json
+  → Ajout du champ "code": "DCT" pour tous les artefacts
+  → Ajout du champ "drkid" (valeurs de 101 à 114)
 
-2. Centralisation du JavaScript :
-   - Déplacement de la fonction showSection() dans script.js
-   - Suppression des balises <script> inline dans index.html et test.html
+- Mises à jour HTML
+  → hexekta.html : chargement dynamique des artefacts depuis data.json
+  → art.html : affichage dynamique du détail d’un artefact via ?id=
+  → Nettoyage complet et conformité avec la structure du site
 
-3. Mise à jour des liens du menu :
-   - Liens du menu désormais fonctionnels (vers index.html, about.html, contact.html, etc.)
-   - Menu uniformisé sur toutes les pages (sauf art.html)
+- JavaScript (script.js)
+  → Fonction de chargement des artefacts depuis data.json
+  → Intégration dynamique sur hexekta.html et art.html
+  → Fonction showSection() conservée
 
-4. Nettoyage :
-   - Suppression du fichier style.csd
-   - Aucune création ou utilisation de PHP (mint.php supprimé)
-
-Fichiers modifiés dans cette version :
-- index.html
-- mint.html
-- test.html
+Fichiers modifiés :
+- data.json
+- col.json
+- hexekta.html
+- art.html
 - script.js
 - readme.txt
 
-Version précédente : v1.0.1.1
-Version actuelle : v1.0.1.2
+Version précédente : v1.0.1.2
+Version actuelle : v1.0.1.3
