@@ -1,87 +1,86 @@
-body { 
-  font-family: 'Segoe UI', sans-serif; 
-  background: #0d0d0d; 
-  color: #eee; 
-  margin: 0; 
-  padding: 0; 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0d0d0d;
+  color: #eee;
+  margin: 0;
+  padding: 0;
 }
 
-header { 
-  background: #111; 
-  padding: 1rem; 
-  border-bottom: 1px solid #333; 
-  text-align: center; 
+header {
+  background: #111;
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+  text-align: center;
 }
 
-.site-title { 
-  margin: 0; 
-  color: #00ffee; 
-  font-size: 2rem; 
+.site-title {
+  margin: 0;
+  color: #00ffee;
+  font-size: 2rem;
 }
 
-.menu { 
-  display: flex; 
-  justify-content: center; 
-  gap: 1rem; 
-  flex-wrap: wrap; 
-  margin-top: 1rem; 
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
-.menu-box { 
-  border: 2px solid #00ffee; 
-  color: #00ffee; 
-  padding: 0.5rem 1.2rem; 
-  border-radius: 10px; 
-  cursor: pointer; 
-  font-weight: bold; 
-  transition: all 0.3s ease; 
-  background: transparent; 
+.menu-box {
+  border: 2px solid #00ffee;
+  color: #00ffee;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background: transparent;
 }
 
-.menu-box:hover { 
-  background: #00ffee; 
-  color: #111; 
-  transform: scale(1.05); 
+.menu-box:hover {
+  background: #00ffee;
+  color: #111;
+  /* Pas de transform ni transition */
 }
 
-.menu-box.active { 
-  background: #00ffee; 
-  color: #111; 
+.menu-box.active {
+  background: #00ffee;
+  color: #111;
 }
 
-.section { 
-  display: none; 
-  padding: 2rem 1rem; 
-  min-height: 60vh; 
-  /* plus d'animation ni opacité */
+.section {
+  display: none;
+  padding: 2rem 1rem;
+  min-height: 60vh;
+  /* Pas d'animation */
 }
 
-.section.active { 
-  display: block; 
+.section.active {
+  display: block;
 }
 
-#artifact-list, .artifact-grid { 
-  display: grid; 
-  gap: 1rem; 
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+#artifact-list, .artifact-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .artifact, .artifact-box, .project-box {
-  background: #1a1a1a; 
-  border: 1px solid #333; 
-  padding: 1rem; 
-  border-radius: 10px; 
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 1rem;
+  border-radius: 10px;
   text-align: center;
-  /* plus aucun box-shadow/halo */
+  /* Pas de box-shadow ni transition */
 }
 
-.artifact img, .artifact-image { 
-  width: 100%; 
-  border-radius: 8px; 
-  margin-bottom: 0.5rem; 
-  max-width: 300px; 
-  height: auto; 
-  display: block; 
+.artifact img, .artifact-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  max-width: 300px;
+  height: auto;
+  display: block;
   border: 1px solid #00ffee33;
 }
 
@@ -129,7 +128,6 @@ header {
   border: 1px solid #333;
   border-radius: 12px;
   text-align: center;
-  /* plus aucun effet lumineux */
 }
 
 .artifact-detail h2 {
@@ -140,13 +138,13 @@ header {
   color: #ccc;
 }
 
-footer { 
-  background: #111; 
-  text-align: center; 
-  padding: 1rem; 
-  border-top: 1px solid #333; 
-  font-size: 0.9rem; 
-  color: #aaa; 
+footer {
+  background: #111;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  color: #aaa;
 }
 
-/* Toutes les animations et keyframes sont supprimées */
+/* Aucune animation, aucune transition, aucun effet halo */
