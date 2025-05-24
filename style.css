@@ -53,7 +53,7 @@ header {
   display: none; 
   padding: 2rem 1rem; 
   min-height: 60vh; 
-  animation: fadeIn 0.5s ease; 
+  /* plus d'animation ni opacité */
 }
 
 .section.active { 
@@ -66,13 +66,13 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
 }
 
-.artifact, .artifact-box { 
+.artifact, .artifact-box, .project-box {
   background: #1a1a1a; 
   border: 1px solid #333; 
   padding: 1rem; 
   border-radius: 10px; 
-  text-align: center; 
-  box-shadow: 0 0 10px #00ffee22; 
+  text-align: center;
+  /* plus aucun box-shadow/halo */
 }
 
 .artifact img, .artifact-image { 
@@ -83,17 +83,6 @@ header {
   height: auto; 
   display: block; 
   border: 1px solid #00ffee33;
-}
-
-.project-box {
-  display: flex;
-  flex-direction: column;
-  background: #1a1a1a;
-  border: 1px solid #333;
-  border-radius: 10px;
-  padding: 1rem;
-  margin-top: 1.5rem;
-  box-shadow: 0 0 10px #00ffee33;
 }
 
 .project-img {
@@ -140,7 +129,7 @@ header {
   border: 1px solid #333;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 0 12px #00ffee33;
+  /* plus aucun effet lumineux */
 }
 
 .artifact-detail h2 {
@@ -160,7 +149,4 @@ footer {
   color: #aaa; 
 }
 
-@keyframes fadeIn { 
-  from { opacity: 0; transform: translateY(10px); } 
-  to { opacity: 1; transform: translateY(0); } 
-}
+/* Toutes les animations et keyframes sont supprimées */
