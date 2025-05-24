@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hexekta – Artefact</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="option.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DigiRelik – Détail Artefact</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="option.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <h1 class="site-title">DigiRelik</h1>
-    <nav class="menu">
-      <div class="menu-box active" data-section="detail">Détail</div>
-      <div class="menu-box" data-section="retour"><a href="hexekta.html" style="color:inherit;text-decoration:none;">Galerie</a></div>
+    <h1><span class="logo">DigiRelik</span> – Hexekta</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="hexekta.html">Hexekta</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
+
   <main>
-    <section id="detail" class="section active">
-      <section class="artifact-detail" id="artifact-detail">
-        <h2>Chargement...</h2>
-      </section>
-    </section>
-    <section id="retour" class="section">
-      <p><a href="hexekta.html">← Retour à la galerie Hexekta</a></p>
+    <section id="artefact-detail-section">
+      <a href="hexekta.html" class="back-link">← Retour à la galerie</a>
+      <div id="artefact-detail" class="artefact-detail">
+        <!-- Le détail sera injecté ici par script.js -->
+        <noscript>Activez JavaScript pour afficher les détails de l'artefact.</noscript>
+      </div>
     </section>
   </main>
+
   <footer>
-    <p>&copy; 2025 DigiRelik – Hexekta</p>
+    <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
