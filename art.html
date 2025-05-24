@@ -1,38 +1,31 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DigiRelik – Détail Artefact</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="option.css" />
-  <script defer src="script.js"></script>
-</head>
-<body>
-  <header>
-    <h1><span class="logo">DigiRelik</span> – Hexekta</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="hexekta.html">Hexekta</a></li>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="artefact-detail-section">
-      <a href="hexekta.html" class="back-link">← Retour à la galerie</a>
-      <div id="artefact-detail" class="artefact-detail">
-        <!-- Le détail sera injecté ici par script.js -->
-        <noscript>Activez JavaScript pour afficher les détails de l'artefact.</noscript>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
-  </footer>
-</body>
-</html>
+// Pour la fiche détail artefact
+const artifactDetail = document.getElementById('artifact-detail');
+if (artifactDetail) {
+  const params = new URLSearchParams(window.location.search);
+  const id = parseInt(params.get('id'));
+  fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+      // Trouver par id ou index
+      const artifact = data.find(a => a.id === id) || data[id - 1];
+      if (!artifact) {
+        artifactDetail.innerHTML = '<p>Artefact non trouvé.</p>';
+        return;
+      }
+      artifactDetail.innerHTML = `
+        <h2>${artifact.name}</h2>
+        <img src="${artifact.image}" alt="${artifact.name}" class="artifact-image">
+        <p><strong>Type :</strong> ${artifact.type}</p>
+        <p><strong>Origine :</strong> ${artifact.origine}</p>
+        <p><strong>Fonction :</strong> ${artifact.fonction}</p>
+        <p><strong>Pouvoir :</strong> ${artifact.pouvoir}</p>
+        <p><strong>Niveau :</strong> ${artifact.niveau}</p>
+        <p><strong>Couleurs :</strong> ${artifact.couleurs ? artifact.couleurs.join(' / ') : ''}</p>
+        <p><strong>Prix :</strong> ${artifact.price}</p>
+        <p>${artifact.description}</p>
+      `;
+    })
+    .catch(error => {
+      artifactDetail.innerHTML = '<p>Erreur lors du chargement des données.</p>';
+    });
+}
