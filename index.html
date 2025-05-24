@@ -1,70 +1,49 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DigiRelik – Portail</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigiRelik – V1.1</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="option.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <div class="logo">DigiRelik</div>
-    <nav>
-      <ul id="main-menu">
-        <li><a href="#home" class="active">Home</a></li>
-        <li class="has-submenu">
-          <a href="#project">Project</a>
-          <ul class="submenu">
-            <li><a href="#hexekta">Hexekta</a></li>
-          </ul>
-        </li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <h1 class="site-title">DigiRelik</h1>
+    <nav class="menu">
+      <div class="menu-box" onclick="showSection('home')">Accueil</div>
+      <div class="menu-box" onclick="showSection('projects')">Projets</div>
+      <div class="menu-box" onclick="showSection('about')">À propos</div>
+      <div class="menu-box" onclick="showSection('contact')">Contact</div>
     </nav>
-  </header>
+  </header>  <main>
+    <section id="home" class="section active">
+      <h2>Bienvenue sur DigiRelik</h2>
+      <p>Une vitrine cyber-ésotérique de collections numériques symboliques et fractales. Explorez l’univers d’artefacts conçus comme des fragments de mémoire encodée.</p>
+    </section><section id="projects" class="section">
+  <h2>Nos Projets</h2>
+  <div class="project-box">
+    <img src="hexekta.jpg" alt="Hexekta" class="project-img">
+    <div class="project-description">
+      <h3>Hexekta</h3>
+      <p>Une collection d’artefacts fractals où chaque NFT est une relique cybernétique. Galerie disponible ci-dessous.</p>
+      <p><a href="hexekta.html">→ Explorer la galerie Hexekta</a></p>
+    </div>
+  </div>
+</section>
 
-  <main>
-    <section id="home">
-      <h1>Bienvenue sur DigiRelik</h1>
-      <p>Le portail de la collection NFT indépendante : artefacts, histoires et innovations sur blockchain.</p>
-    </section>
+<section id="about" class="section">
+  <h2>À propos</h2>
+  <p>DigiRelik est un projet belge indépendant dédié à la mise en lumière d'artefacts numériques aux dimensions symboliques, historiques et fictionnelles. Chaque projet raconte une histoire, chaque NFT est une mémoire.</p>
+</section>
 
-    <section id="project">
-      <h2>Project</h2>
-      <p>Découvrez nos projets NFT uniques.</p>
-      <div class="project-links">
-        <a href="#hexekta" class="project-link">Accéder à Hexekta</a>
-      </div>
-      <div class="iframe-container">
-        <!-- Iframe d'exemple, à remplacer par l'URL de ton choix -->
-        <iframe src="hexekta.html" title="Hexekta NFT" frameborder="0"></iframe>
-      </div>
-      <section id="hexekta">
-        <h3>Hexekta</h3>
-        <p>Hexekta est la première collection d’artefacts cybernétiques NFT, porteurs de mémoire et de récits numériques.</p>
-        <ul>
-          <li>Artefacts uniques à vendre</li>
-          <li>Mint & validation multichain</li>
-          <li>Projet 100% transparent</li>
-        </ul>
-      </section>
-    </section>
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Pour toute collaboration ou information : <a href="mailto:jyc.joyz@gmail.com">jyc.joyz@gmail.com</a></p>
+</section>
 
-    <section id="about">
-      <h2>À propos</h2>
-      <p>DigiRelik est un projet indépendant visant à créer des ponts entre art, narration et blockchain. Notre objectif : l’innovation et la transparence.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Une question ? Un partenariat ?<br>Contactez-nous : <a href="mailto:contact@digirelik.com">contact@digirelik.com</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
+  </main>  <footer>
+    <p>&copy; 2025 DigiRelik – Tous droits réservés.</p>
   </footer>
 </body>
 </html>
