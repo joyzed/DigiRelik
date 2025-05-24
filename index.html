@@ -1,107 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DigiRelik – Accueil</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      background: #0a0a0a;
-      color: #00ffff;
-      font-family: 'Orbitron', sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-bottom: 40px;
-    }
-    nav a {
-      color: #00ffff;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 1.1rem;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #00bbbb;
-    }
-    section {
-      max-width: 900px;
-      margin: 0 auto 40px auto;
-      background: #111;
-      border: 1px solid #00ffff;
-      border-radius: 12px;
-      padding: 20px;
-    }
-    section h2 {
-      text-align: center;
-      margin-top: 0;
-      margin-bottom: 15px;
-      color: #00ffff;
-    }
-    #projet iframe {
-      width: 100%;
-      height: 700px;
-      border: none;
-      border-radius: 8px;
-    }
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9rem;
-      color: #005555;
-    }
-    @media (max-width: 700px) {
-      #projet iframe {
-        height: 500px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DigiRelik – Portail</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <h1>DigiRelik</h1>
-    <p>Bienvenue dans l’univers Hexekta, projet NFT cybernétique et mystique.</p>
+    <div class="logo">DigiRelik</div>
     <nav>
-      <a href="#accueil">Accueil</a>
-      <a href="#apropos">À propos</a>
-      <a href="#projet">Projet</a>
-      <a href="#contact">Contact</a>
+      <ul id="main-menu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li class="has-submenu">
+          <a href="#project">Project</a>
+          <ul class="submenu">
+            <li><a href="#hexekta">Hexekta</a></li>
+          </ul>
+        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="accueil">
-    <h2>Accueil</h2>
-    <p>Découvrez DigiRelik, une plateforme dédiée à la création et la collection d’artefacts numériques uniques basés sur la blockchain eCash et DigiByte.</p>
-  </section>
+  <main>
+    <section id="home">
+      <h1>Bienvenue sur DigiRelik</h1>
+      <p>Le portail de la collection NFT indépendante : artefacts, histoires et innovations sur blockchain.</p>
+    </section>
 
-  <section id="apropos">
-    <h2>À propos</h2>
-    <p>Hexekta est une collection d’artefacts cybernétiques, chacun porteur d’une mémoire, d’un pouvoir, et d’une histoire. Notre objectif est de fusionner art, technologie et mysticisme.</p>
-  </section>
+    <section id="project">
+      <h2>Project</h2>
+      <p>Découvrez nos projets NFT uniques.</p>
+      <div class="project-links">
+        <a href="#hexekta" class="project-link">Accéder à Hexekta</a>
+      </div>
+      <div class="iframe-container">
+        <!-- Iframe d'exemple, à remplacer par l'URL de ton choix -->
+        <iframe src="hexekta.html" title="Hexekta NFT" frameborder="0"></iframe>
+      </div>
+      <section id="hexekta">
+        <h3>Hexekta</h3>
+        <p>Hexekta est la première collection d’artefacts cybernétiques NFT, porteurs de mémoire et de récits numériques.</p>
+        <ul>
+          <li>Artefacts uniques à vendre</li>
+          <li>Mint & validation multichain</li>
+          <li>Projet 100% transparent</li>
+        </ul>
+      </section>
+    </section>
 
-  <section id="projet">
-    <h2>Projet Hexekta</h2>
-    <iframe
-      src="hexekta.html"
-      title="Galerie Hexekta"
-      loading="lazy"
-      sandbox="allow-scripts allow-same-origin allow-popups"
-    ></iframe>
-  </section>
+    <section id="about">
+      <h2>À propos</h2>
+      <p>DigiRelik est un projet indépendant visant à créer des ponts entre art, narration et blockchain. Notre objectif : l’innovation et la transparence.</p>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Pour toute question ou collaboration, contactez-nous à <a href="mailto:contact@digirelik.io">contact@digirelik.io</a>.</p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Une question ? Un partenariat ?<br>Contactez-nous : <a href="mailto:contact@digirelik.com">contact@digirelik.com</a></p>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
