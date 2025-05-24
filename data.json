@@ -1,16 +1,128 @@
 [
-  { "id": 1, "name": "Miroir de Vanta", "description": "Surface noire absorbant toute lumière, servant d'interface psychique.", "power": "Connexion aux mémoires numériques", "colors": ["#000000", "#111111"], "image": "DigiRelik.png" },
-  { "id": 2, "name": "Synapse 9", "description": "Implant neural piraté dédoublant la conscience.", "power": "Accélération mentale extrême", "colors": ["#6600cc", "#9900ff"], "image": "DigiRelik.png" },
-  { "id": 3, "name": "La Rose Numérique", "description": "Fleur cybernétique liée aux émotions du porteur.", "power": "Communication émotionnelle à distance", "colors": ["#e60073", "#ff66cc"], "image": "DigiRelik.png" },
-  { "id": 4, "name": "Clé Ouroboros", "description": "Disque de données infini, crypté, se régénérant sans cesse.", "power": "Accès illimité aux archives numériques interdites", "colors": ["#ffcc00", "#ff9900"], "image": "DigiRelik.png" },
-  { "id": 5, "name": "Œil de Nahash", "description": "Scanner cybernétique organique issu d’un serpent mythique.", "power": "Perception des intentions cachées", "colors": ["#33cc33", "#66ff66"], "image": "DigiRelik.png" },
-  { "id": 6, "name": "Crâne de V.I.T.A.", "description": "Support de stockage mémoire d’une IA défunte.", "power": "Accès à la connaissance oubliée", "colors": ["#999999", "#cccccc"], "image": "DigiRelik.png" },
-  { "id": 7, "name": "Totem Nébulaire", "description": "Cristal changeant en fonction de l’énergie ambiante.", "power": "Amplification énergétique", "colors": ["#003366", "#3399ff"], "image": "DigiRelik.png" },
-  { "id": 8, "name": "Glyphe d'Aether", "description": "Fragment de langage oublié, encodé dans la matière.", "power": "Activation de portails", "colors": ["#9933ff", "#cc99ff"], "image": "DigiRelik.png" },
-  { "id": 9, "name": "Ancre Noosphérique", "description": "Balise mentale stabilisant la pensée collective.", "power": "Stabilisation de réseaux conscients", "colors": ["#00cccc", "#66ffff"], "image": "DigiRelik.png" },
-  { "id": 10, "name": "Fractale d’Isis", "description": "Structure mathématique en hommage à l’ordre sacré.", "power": "Harmonisation des flux de données", "colors": ["#ff6666", "#ff9999"], "image": "DigiRelik.png" },
-  { "id": 11, "name": "Cube de Babel", "description": "Traducteur universel instable issu d’une IA expérimentale.", "power": "Traduction absolue", "colors": ["#cccc00", "#ffff66"], "image": "DigiRelik.png" },
-  { "id": 12, "name": "Trône de l’Architecte", "description": "Siège du contrôle absolu sur les artefacts connectés.", "power": "Commande à distance des autres artefacts", "colors": ["#3333cc", "#6666ff"], "image": "DigiRelik.png" },
-  { "id": 13, "name": "Cœur de Kali", "description": "Noyau d’énergie noire pulsant avec la mémoire collective.", "power": "Résurrection d’artefacts perdus", "colors": ["#990000", "#cc3333"], "image": "DigiRelik.png" },
-  { "id": 14, "name": "Fusion Primordiale", "description": "Résultat de l’union entre le Trône et le Cœur.", "power": "Contrôle total du réseau Hexekta", "colors": ["#0000ff", "#ff0000"], "image": "DigiRelik.png" }
+  {
+    "id": 1,
+    "nom": "Le Miroir de Vanta",
+    "description": "Surface noire absorbant toute lumière, servant d’interface psychique.",
+    "origine": "Société secrète",
+    "pouvoirs": "Connexion aux mémoires numériques collectives",
+    "histoire": "Utilisé par des hackers en transe, certains ne reviennent jamais.",
+    "ipfs": "QmVantaMirror123"
+  },
+  {
+    "id": 2,
+    "nom": "Synapse 9",
+    "description": "Implant neural augmentant la vitesse de pensée.",
+    "origine": "Laboratoire de biotechnologie expérimental",
+    "pouvoirs": "Accélération cognitive, duplication de conscience",
+    "histoire": "Installé par un prodige qui a perdu le contrôle de son double.",
+    "ipfs": "QmSynapseNine456"
+  },
+  {
+    "id": 3,
+    "nom": "La Rose Numérique",
+    "description": "Fleur cybernétique réagissant aux émotions.",
+    "origine": "Cadeau dans le Métavers",
+    "pouvoirs": "Change de couleur selon l’émotion du porteur",
+    "histoire": "Fanée à l’instant exact de la mort de son propriétaire.",
+    "ipfs": "QmDigitalRose789"
+  },
+  {
+    "id": 4,
+    "nom": "Clé Ouroboros",
+    "description": "Disque de données en régénération continue.",
+    "origine": "Archives quantiques perdues",
+    "pouvoirs": "Stockage infini crypté, autoregénération",
+    "histoire": "Retrouvée dans un satellite endommagé.",
+    "ipfs": "QmOuroborosKey321"
+  },
+  {
+    "id": 5,
+    "nom": "Lentille d'Éclipse",
+    "description": "Lentille révélant des réalités superposées.",
+    "origine": "Marcheurs du Vide",
+    "pouvoirs": "Fusionne plusieurs lignes temporelles",
+    "histoire": "Utilisée dans les voyages transdimensionnels.",
+    "ipfs": "QmEclipseLens654"
+  },
+  {
+    "id": 6,
+    "nom": "Croc Chrono",
+    "description": "Fragment suspendu dans une boucle temporelle.",
+    "origine": "Bête temporelle inconnue",
+    "pouvoirs": "Gèle ou accélère le temps local",
+    "histoire": "Collecté dans une poche de temps effondrée.",
+    "ipfs": "QmChronoFang987"
+  },
+  {
+    "id": 7,
+    "nom": "Prisme d’Æon",
+    "description": "Fragment prismatique multidimensionnel.",
+    "origine": "Éclat d’un univers effondré",
+    "pouvoirs": "Réoriente les flux d’énergie",
+    "histoire": "Brise les illusions et les souvenirs falsifiés.",
+    "ipfs": "QmAeonPrism444"
+  },
+  {
+    "id": 8,
+    "nom": "Hélice Neuronale",
+    "description": "Spirale génétique codée d’une ancienne IA.",
+    "origine": "Ruines de serveurs oubliés",
+    "pouvoirs": "Réécrit la perception",
+    "histoire": "Inscrite dans les rêves subconscients des ingénieurs.",
+    "ipfs": "QmNeuroHelix555"
+  },
+  {
+    "id": 9,
+    "nom": "Lame Fractale",
+    "description": "Épée repliée sur elle-même à l’infini.",
+    "origine": "Forge fractale",
+    "pouvoirs": "Découpe données et matière",
+    "histoire": "Forgée en silence durant la Guerre Numérique.",
+    "ipfs": "QmFractalBlade666"
+  },
+  {
+    "id": 10,
+    "nom": "Noyau Pulsar",
+    "description": "Réacteur magnétique au rythme inconnu.",
+    "origine": "Terraformeur abandonné",
+    "pouvoirs": "Source d’énergie et perturbateur de signal",
+    "histoire": "Ses pulsations suivent d’anciens chants.",
+    "ipfs": "QmPulseCore777"
+  },
+  {
+    "id": 11,
+    "nom": "Graine du Vide",
+    "description": "Singularité cristallisée d’entropie.",
+    "origine": "Nexus de l’Effondrement",
+    "pouvoirs": "Déstabilise et reforme les systèmes",
+    "histoire": "Utilisée pour réinitialiser des mondes instables.",
+    "ipfs": "QmVoidSeed888"
+  },
+  {
+    "id": 12,
+    "nom": "Sceau Jumeau : Hex",
+    "description": "Sceau du pouvoir de domination.",
+    "origine": "Inconnue",
+    "pouvoirs": "Contrôle la moitié de l’Équilibre Central",
+    "histoire": "Lié à l’artefact 13.",
+    "ipfs": "QmHexSigil999"
+  },
+  {
+    "id": 13,
+    "nom": "Sceau Jumeau : Ekta",
+    "description": "Sceau du pouvoir de fusion.",
+    "origine": "Inconnue",
+    "pouvoirs": "Contrôle l’autre moitié de l’Équilibre Central",
+    "histoire": "Complète la boucle avec Hex.",
+    "ipfs": "QmEktaSigil000"
+  },
+  {
+    "id": 14,
+    "nom": "Trône de l’Unité",
+    "description": "Fusion des deux sceaux jumeaux.",
+    "origine": "Cœur du Cryptosystème",
+    "pouvoirs": "Contrôle les 11 artefacts principaux",
+    "histoire": "Ne s’éveille que lorsque Hex et Ekta s’unissent.",
+    "ipfs": "QmUnityThrone777"
+  }
 ]
