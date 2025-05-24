@@ -1,3 +1,51 @@
+/* option.css – v1.0.1 – 24/05/2025 12:38:19 – Styles pour test.html (menu avec sous-menus) */
+.menu-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list > li {
+  position: relative;
+}
+
+.menu-list a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #00ffff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.menu-list a:hover {
+  background: rgba(0, 255, 255, 0.2);
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background-color: #111;
+  border: 1px solid #00ffff;
+  border-radius: 0.5rem;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.menu-list li:hover > .submenu {
+  display: flex;
+}
+
+.submenu li a {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
 /* option.css – v1.0.1 – 24/05/2025 12:12:46 – Ajout du style du menu avec sous-menus */
 .menu-list {
   list-style: none;

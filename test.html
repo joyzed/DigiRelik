@@ -1,3 +1,4 @@
+<!-- test.html – v1.0.1 – 24/05/2025 12:37:42 – Test du menu CSS avec sous-menus -->
 <!-- index.html – v1.0.1 – 24/05/2025 12:18:08 – Menu avec sous-menus + reformatage -->
 
 <!DOCTYPE html>
@@ -13,17 +14,27 @@
 <body>
   <header>
     <h1 class="site-title">DigiRelik</h1>
+    
     <nav class="menu">
-      <div class="menu-box" onclick="showSection('home')">Accueil</div>
-      <div class="menu-box" onclick="showSection('project')">Projet</div>
-      <div class="menu-box" onclick="showSection('about')">À propos</div>
-      <div class="menu-box" onclick="showSection('contact')">Contact</div>
+      <ul class="menu-list">
+        <li><a href="#">Accueil</a></li>
+        <li>
+          <a href="#">Projet</a>
+          <ul class="submenu">
+            <li><a href="hexekta.html">Hexekta</a></li>
+            <li><a href="mint.html">Mint</a></li>
+            <li><a href="trade.html">Trade</a></li>
+          </ul>
+        </li>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
+
   </header>
 
   <main>
     <section id="home" class="section active">
-      <p><a href="test.html" class="cta-link">→ Voir la page de test</a></p>
       <h2>DigiRelik</h2>
       <p class="slogan">Les artefacts du futur ont une mémoire.</p>
 
