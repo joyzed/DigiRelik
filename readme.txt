@@ -15,3 +15,27 @@ Ajouts de la version :
 Tous les fichiers suivent l’ossature simplyv1 (#hd, #mn, #ct, #ft)
 
 Date : 24 mai 2025 – Heure : 20:00
+
+
+readme.txt – v1a.0.0.2 – 24/05/2025 20:30:00
+------------------------------------------------------------
+
+Modifications :
+- Intégration du contenu complet dans toutes les pages HTML existantes :
+  - hexekta.html : description de la collection
+  - art.html : description type d’un artefact
+  - labs.html : présentation des collections futures
+  - roadmap.html : jalons du projet
+  - faq.html : Q&R fréquentes
+  - news.html : blocs d’actualité
+  - trade.html : infos sur l’échange crypto
+  - mint.html : annonce de mise en pause + explication
+  - contact.html : création de la page de contact
+- Ajout de liens textuels internes dans chaque page pour navigation croisée
+
+Date : 24 mai 2025 – Heure : 20:30
+
+[✓] v1a.0.0.3 – JSON et Navigation JS
+- data.json : 14 artefacts Hexekta complets
+- col.json : 5 collections en projet
+- script.js : ajout du support de navigation via hash (#section)

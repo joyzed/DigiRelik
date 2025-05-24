@@ -1,254 +1,254 @@
 [
   {
     "id": 1,
-    "nom": "Le Miroir de Vanta",
-    "type": "Interface psychique",
-    "origine": "Société secrète post-humaine",
-    "fonction": "Permet l'accès aux mémoires numériques collectives",
-    "pouvoir": "Absorbe la lumière et projette la conscience dans le réseau",
+    "nom": "Artefact 1",
+    "type": "Artefact psychique",
+    "origine": "Hexekta Genesis",
+    "fonction": "Mémoire numérique encapsulée",
+    "pouvoir": "Pouvoir mystique 1",
     "niveau": "Alpha",
     "couleurs": [
-      "noir absolu",
-      "bleu cyan"
+      "bleu fluo",
+      "noir"
     ],
     "image": "DigiRelik.png",
     "price": "300 XEC",
-    "description": "Surface noire absorbant toute lumière, utilisée pour explorer les souvenirs collectifs. Certains y laissent leur esprit, devenant des ombres conscientes.",
-    "code": "DCT",
-    "drkid": 101
+    "description": "Artefact unique issu de la collection Hexekta. Énergie symbolique canalisée n°1.",
+    "mintUrl": "https://digirelik.org/mint/1",
+    "drkid": 1000
   },
   {
     "id": 2,
-    "nom": "Synapse 9",
-    "type": "Implant neural",
-    "origine": "Laboratoire indépendant",
-    "fonction": "Augmente la vitesse de pensée",
-    "pouvoir": "Permet des calculs surhumains mais dédouble la conscience",
-    "niveau": "Beta",
+    "nom": "Artefact 2",
+    "type": "Artefact psychique",
+    "origine": "Hexekta Genesis",
+    "fonction": "Mémoire numérique encapsulée",
+    "pouvoir": "Pouvoir mystique 2",
+    "niveau": "Alpha",
     "couleurs": [
-      "argent",
-      "bleu électrique"
+      "bleu fluo",
+      "noir"
     ],
     "image": "DigiRelik.png",
-    "price": "450 XEC",
-    "description": "Implant neural de dernière génération. Utilisé par les hackers d’élite, il est aussi craint pour ses effets secondaires sur la psyché.",
-    "code": "DCT",
-    "drkid": 102
+    "price": "310 XEC",
+    "description": "Artefact unique issu de la collection Hexekta. Énergie symbolique canalisée n°2.",
+    "mintUrl": "https://digirelik.org/mint/2",
+    "drkid": 1111
   },
   {
     "id": 3,
-    "nom": "La Rose Numérique",
-    "type": "Artefact émotionnel",
-    "origine": "Cercle des Artisans Virtuels",
-    "fonction": "Change de couleur selon les émotions du porteur",
-    "pouvoir": "Prédit les états émotionnels et la santé mentale",
-    "niveau": "Gamma",
+    "nom": "Artefact 3",
+    "type": "Artefact psychique",
+    "origine": "Hexekta Genesis",
+    "fonction": "Mémoire numérique encapsulée",
+    "pouvoir": "Pouvoir mystique 3",
+    "niveau": "Alpha",
     "couleurs": [
-      "rose fuchsia",
-      "violet"
+      "bleu fluo",
+      "noir"
     ],
     "image": "DigiRelik.png",
-    "price": "220 XEC",
-    "description": "Fleur cybernétique offerte avant le départ d’un soldat pour la guerre dans le Métavers. Elle flétrit à distance pour signaler la perte d’un être cher.",
-    "code": "DCT",
-    "drkid": 103
+    "price": "320 XEC",
+    "description": "Artefact unique issu de la collection Hexekta. Énergie symbolique canalisée n°3.",
+    "mintUrl": "https://digirelik.org/mint/3",
+    "drkid": 1222
   },
   {
     "id": 4,
-    "nom": "Clé Ouroboros",
-    "type": "Support de mémoire",
-    "origine": "Ordre Ouroboros",
-    "fonction": "Stockage de données infini",
-    "pouvoir": "Sauvegarde et réinitialise l’esprit de son porteur",
+    "nom": "Artefact 4",
+    "type": "Artefact psychique",
+    "origine": "Hexekta Genesis",
+    "fonction": "Mémoire numérique encapsulée",
+    "pouvoir": "Pouvoir mystique 4",
     "niveau": "Alpha",
     "couleurs": [
-      "or",
+      "bleu fluo",
+      "noir"
+    ],
+    "image": "DigiRelik.png",
+    "price": "330 XEC",
+    "description": "Artefact unique issu de la collection Hexekta. Énergie symbolique canalisée n°4.",
+    "mintUrl": "https://digirelik.org/mint/4",
+    "drkid": 1333
+  },
+  {
+    "id": 5,
+    "nom": "Artefact 5",
+    "type": "Artefact psychique",
+    "origine": "Hexekta Genesis",
+    "fonction": "Mémoire numérique encapsulée",
+    "pouvoir": "Pouvoir mystique 5",
+    "niveau": "Alpha",
+    "couleurs": [
+      "bleu fluo",
+      "noir"
+    ],
+    "image": "DigiRelik.png",
+    "price": "340 XEC",
+    "description": "Artefact unique issu de la collection Hexekta. Énergie symbolique canalisée n°5.",
+    "mintUrl": "https://digirelik.org/mint/5",
+    "drkid": 1444
+  },
+  {
+    "id": 6,
+    "nom": "Artefact 6",
+    "type": "Artefact psychique",
+    "origine": "Hexekta Genesis",
+    "fonction": "Mémoire numérique encapsulée",
+    "pouvoir": "Pouvoir mystique 6",
+    "niveau": "Alpha",
+    "couleurs": [
+      "bleu fluo",
       "noir"
     ],
     "image": "DigiRelik.png",
     "price": "350 XEC",
-    "description": "Disque de données légendaire. Il contient la mémoire de générations entières et peut réinitialiser une identité humaine.",
-    "code": "DCT",
-    "drkid": 104
-  },
-  {
-    "id": 5,
-    "nom": "Sceptre Fractal",
-    "type": "Interface fractale",
-    "origine": "Ordre des Mathémages",
-    "fonction": "Contrôle les IA fractales",
-    "pouvoir": "Manipule les probabilités locales",
-    "niveau": "Delta",
-    "couleurs": [
-      "bleu profond",
-      "argent"
-    ],
-    "image": "DigiRelik.png",
-    "price": "580 XEC",
-    "description": "Utilisé lors de rituels numériques, ce sceptre ouvre des chemins dans les réseaux d’IA. Son porteur est respecté autant que craint.",
-    "code": "DCT",
-    "drkid": 105
-  },
-  {
-    "id": 6,
-    "nom": "Chrono-capsule",
-    "type": "Artefact temporel",
-    "origine": "Syndicat des Veilleurs",
-    "fonction": "Suspend et relance le temps autour du porteur",
-    "pouvoir": "Permet de revivre un souvenir ou de figer un instant",
-    "niveau": "Epsilon",
-    "couleurs": [
-      "gris acier",
-      "bleu pâle"
-    ],
-    "image": "DigiRelik.png",
-    "price": "510 XEC",
-    "description": "Ce dispositif est utilisé lors d’opérations délicates pour ralentir l’environnement ou revivre un souvenir clé.",
-    "code": "DCT",
-    "drkid": 106
+    "description": "Artefact unique issu de la collection Hexekta. Énergie symbolique canalisée n°6.",
+    "mintUrl": "https://digirelik.org/mint/6",
+    "drkid": 1555
   },
   {
     "id": 7,
-    "nom": "Gant du Passeur",
-    "type": "Interface d’accès",
-    "origine": "Ordre des Passeurs",
-    "fonction": "Permet la traversée de réseaux sécurisés",
-    "pouvoir": "Fait disparaître le porteur de toutes les caméras et logs",
-    "niveau": "Gamma",
+    "nom": "Artefact 7",
+    "type": "Artefact psychique",
+    "origine": "Hexekta Genesis",
+    "fonction": "Mémoire numérique encapsulée",
+    "pouvoir": "Pouvoir mystique 7",
+    "niveau": "Alpha",
     "couleurs": [
-      "noir mat",
-      "rouge sombre"
+      "bleu fluo",
+      "noir"
     ],
     "image": "DigiRelik.png",
-    "price": "330 XEC",
-    "description": "Ce gant électronique efface toute trace numérique du porteur lors d’intrusions dans des réseaux critiques.",
-    "code": "DCT",
-    "drkid": 107
+    "price": "360 XEC",
+    "description": "Artefact unique issu de la collection Hexekta. Énergie symbolique canalisée n°7.",
+    "mintUrl": "https://digirelik.org/mint/7",
+    "drkid": 1666
   },
   {
     "id": 8,
-    "nom": "Helix Oracle",
-    "type": "Processeur prédictif",
-    "origine": "Corporation Parallax",
-    "fonction": "Prédit les issues possibles d’une décision",
-    "pouvoir": "Offre des visions du futur proche",
-    "niveau": "Beta",
+    "nom": "Artefact 8",
+    "type": "Artefact psychique",
+    "origine": "Hexekta Genesis",
+    "fonction": "Mémoire numérique encapsulée",
+    "pouvoir": "Pouvoir mystique 8",
+    "niveau": "Alpha",
     "couleurs": [
-      "vert néon",
-      "argent"
+      "bleu fluo",
+      "noir"
     ],
     "image": "DigiRelik.png",
-    "price": "480 XEC",
-    "description": "Ce module est implanté chez certains stratèges de la mégalopole pour anticiper les évolutions du marché ou des conflits.",
-    "code": "DCT",
-    "drkid": 108
+    "price": "370 XEC",
+    "description": "Artefact unique issu de la collection Hexekta. Énergie symbolique canalisée n°8.",
+    "mintUrl": "https://digirelik.org/mint/8",
+    "drkid": 1777
   },
   {
     "id": 9,
-    "nom": "Lentille Arcanum",
-    "type": "Optique avancée",
-    "origine": "Guilde des Voyants",
-    "fonction": "Décrypte tous les cryptages visuels",
-    "pouvoir": "Permet de voir à travers les illusions numériques",
-    "niveau": "Delta",
+    "nom": "Artefact 9",
+    "type": "Artefact psychique",
+    "origine": "Hexekta Genesis",
+    "fonction": "Mémoire numérique encapsulée",
+    "pouvoir": "Pouvoir mystique 9",
+    "niveau": "Alpha",
     "couleurs": [
-      "bleu clair",
-      "argent chromé"
+      "bleu fluo",
+      "noir"
     ],
     "image": "DigiRelik.png",
-    "price": "295 XEC",
-    "description": "Une lentille qui se fixe à l’œil, utilisée par les analystes et contre-espions pour déjouer les mirages digitaux.",
-    "code": "DCT",
-    "drkid": 109
+    "price": "380 XEC",
+    "description": "Artefact unique issu de la collection Hexekta. Énergie symbolique canalisée n°9.",
+    "mintUrl": "https://digirelik.org/mint/9",
+    "drkid": 1888
   },
   {
     "id": 10,
-    "nom": "Épine Noire",
-    "type": "Arme cybernétique",
-    "origine": "Mafia Digitale",
-    "fonction": "Désactive toute IA ciblée à distance",
-    "pouvoir": "Paralyse ou détruit temporairement un réseau intelligent",
-    "niveau": "Epsilon",
+    "nom": "Artefact 10",
+    "type": "Artefact psychique",
+    "origine": "Hexekta Genesis",
+    "fonction": "Mémoire numérique encapsulée",
+    "pouvoir": "Pouvoir mystique 10",
+    "niveau": "Alpha",
     "couleurs": [
-      "noir",
-      "rouge vif"
+      "bleu fluo",
+      "noir"
     ],
     "image": "DigiRelik.png",
-    "price": "666 XEC",
-    "description": "Utilisée par les saboteurs numériques, cette épine injecte un code destructeur au cœur des systèmes IA ennemis.",
-    "code": "DCT",
-    "drkid": 110
+    "price": "390 XEC",
+    "description": "Artefact unique issu de la collection Hexekta. Énergie symbolique canalisée n°10.",
+    "mintUrl": "https://digirelik.org/mint/10",
+    "drkid": 1999
   },
   {
     "id": 11,
-    "nom": "Mandala de Sable",
-    "type": "Artefact méditatif",
-    "origine": "Ermites des Sables Binaires",
-    "fonction": "Stabilise l'esprit dans le cyberespace",
-    "pouvoir": "Protège contre les attaques mentales et virus psychiques",
-    "niveau": "Gamma",
+    "nom": "Artefact 11",
+    "type": "Artefact psychique",
+    "origine": "Hexekta Genesis",
+    "fonction": "Mémoire numérique encapsulée",
+    "pouvoir": "Pouvoir mystique 11",
+    "niveau": "Alpha",
     "couleurs": [
-      "ocre",
-      "bleu turquoise"
+      "bleu fluo",
+      "noir"
     ],
     "image": "DigiRelik.png",
-    "price": "277 XEC",
-    "description": "Cet artefact est utilisé lors des plongées profondes en réalité virtuelle pour ne pas perdre le fil du réel.",
-    "code": "DCT",
-    "drkid": 111
+    "price": "400 XEC",
+    "description": "Artefact unique issu de la collection Hexekta. Énergie symbolique canalisée n°11.",
+    "mintUrl": "https://digirelik.org/mint/11",
+    "drkid": 2110
   },
   {
     "id": 12,
-    "nom": "Duo Genesis",
-    "type": "Artefact ultime",
-    "origine": "Anciens Architectes",
-    "fonction": "Permet la fusion de deux artefacts choisis",
-    "pouvoir": "Déclenche un contrôle partagé sur les artefacts fusionnés",
-    "niveau": "Omega",
+    "nom": "Artefact 12",
+    "type": "Artefact psychique",
+    "origine": "Hexekta Genesis",
+    "fonction": "Mémoire numérique encapsulée",
+    "pouvoir": "Pouvoir mystique 12",
+    "niveau": "Alpha",
     "couleurs": [
-      "or blanc",
-      "bleu nuit"
+      "bleu fluo",
+      "noir"
     ],
     "image": "DigiRelik.png",
-    "price": "1200 XEC",
-    "description": "Le Duo Genesis est l’une des deux clés nécessaires pour activer le contrôle total sur tous les artefacts principaux.",
-    "code": "DCT",
-    "drkid": 112
+    "price": "410 XEC",
+    "description": "Artefact unique issu de la collection Hexekta. Énergie symbolique canalisée n°12.",
+    "mintUrl": "https://digirelik.org/mint/12",
+    "drkid": 2221
   },
   {
     "id": 13,
-    "nom": "Trône du Nexus",
-    "type": "Artefact ultime",
-    "origine": "Anciens Architectes",
-    "fonction": "Canalise l’énergie des artefacts fusionnés",
-    "pouvoir": "Donne le contrôle absolu sur le réseau Hexekta",
-    "niveau": "Omega",
+    "nom": "Artefact 13",
+    "type": "Artefact psychique",
+    "origine": "Hexekta Genesis",
+    "fonction": "Mémoire numérique encapsulée",
+    "pouvoir": "Pouvoir mystique 13",
+    "niveau": "Alpha",
     "couleurs": [
-      "argent pur",
-      "noir profond"
+      "bleu fluo",
+      "noir"
     ],
     "image": "DigiRelik.png",
-    "price": "1800 XEC",
-    "description": "Ce trône numérique n’est activé que lorsque Duo Genesis est présent. Ensemble, ils ouvrent la voie au contrôle ultime.",
-    "code": "DCT",
-    "drkid": 113
+    "price": "420 XEC",
+    "description": "Artefact unique issu de la collection Hexekta. Énergie symbolique canalisée n°13.",
+    "mintUrl": "https://digirelik.org/mint/13",
+    "drkid": 2332
   },
   {
     "id": 14,
-    "nom": "L’Éclipse Unifiée",
-    "type": "Fusion ultime",
-    "origine": "Fusion des artefacts 12 et 13",
-    "fonction": "Unifie le contrôle et l’énergie des 13 autres artefacts",
-    "pouvoir": "Déclenche l’événement mythique du réseau Hexekta",
-    "niveau": "Transcendance",
+    "nom": "Artefact 14",
+    "type": "Artefact psychique",
+    "origine": "Hexekta Genesis",
+    "fonction": "Mémoire numérique encapsulée",
+    "pouvoir": "Pouvoir mystique 14",
+    "niveau": "Alpha",
     "couleurs": [
-      "noir sidéral",
-      "blanc pur"
+      "bleu fluo",
+      "noir"
     ],
     "image": "DigiRelik.png",
-    "price": "2500 XEC",
-    "description": "Artefact légendaire, résultat de la fusion entre Duo Genesis et Trône du Nexus. Il permet à son porteur de transcender toutes les barrières numériques.",
-    "code": "DCT",
-    "drkid": 114
+    "price": "430 XEC",
+    "description": "Artefact unique issu de la collection Hexekta. Énergie symbolique canalisée n°14.",
+    "mintUrl": "https://digirelik.org/mint/14",
+    "drkid": 2443
   }
 ]

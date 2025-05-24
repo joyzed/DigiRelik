@@ -1,47 +1,42 @@
 [
   {
     "id": 1,
+    "code": "DCT",
     "nom": "DeadCanTalk",
-    "ticker": "DCT",
-    "type": "Expérience IA",
-    "nombre": 666,
-    "description": "Des NFT qui permettent de 'parler avec les morts' via une interface de discussion IA. Dialogue évolutif, symbolique, parfois troublant.",
-    "drkid": 0
+    "description": "Projet de voix numériques conservées dans des artefacts funéraires.",
+    "etat": "projet",
+    "image": "collections/deadcantalk.jpg"
   },
   {
     "id": 2,
+    "code": "DAR",
     "nom": "DigiArt",
-    "ticker": "DAR",
-    "type": "Art numérique VIP",
-    "nombre": 33,
-    "description": "Œuvres numériques issues de 10 artistes peintres. Chaque NFT est promu dans des événements VIP réels.",
-    "drkid": 0
+    "description": "Collection d’œuvres numériques conceptuelles sur support blockchain.",
+    "etat": "projet",
+    "image": "collections/digiart.jpg"
   },
   {
     "id": 3,
+    "code": "SHC",
     "nom": "ShadowCore",
-    "ticker": "SHC",
-    "type": "Artefacts obscurs",
-    "nombre": 128,
-    "description": "Objets numériques liés aux secrets du web et aux données cachées. Mécaniques évolutives selon le wallet du détenteur.",
-    "drkid": 0
+    "description": "Symboles des zones d’ombre humaines, transcrits en art fractal.",
+    "etat": "projet",
+    "image": "collections/shadowcore.jpg"
   },
   {
     "id": 4,
+    "code": "MXR",
     "nom": "Memor-X",
-    "ticker": "MXR",
-    "type": "Mémoire décentralisée",
-    "nombre": 256,
-    "description": "Fragments cryptographiques d’histoires numériques à déverrouiller avec des clés spécifiques sur la blockchain DigiByte.",
-    "drkid": 0
+    "description": "Fragments de mémoire expérimentale stockés en NFT.",
+    "etat": "projet",
+    "image": "collections/memorx.jpg"
   },
   {
     "id": 5,
+    "code": "CDL",
     "nom": "Codex Lux",
-    "ticker": "CDL",
-    "type": "Manuscrits interactifs",
-    "nombre": 77,
-    "description": "Pages lumineuses d’un codex mystique, contenant des savoirs, énigmes ou symboles rares à collectionner et assembler.",
-    "drkid": 0
+    "description": "Révélation d’écritures symboliques numérisées dans la lumière.",
+    "etat": "projet",
+    "image": "collections/codexlux.jpg"
   }
 ]

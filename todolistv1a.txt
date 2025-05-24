@@ -1,0 +1,58 @@
+todolistv1a.txt – DigiRelik v1a – 24/05/2025 20:15:00
+-------------------------------------------------------
+
+Versionnage :
+- Format : v1a.0.0.0 → v1a.0.0.1 → v1a.0.1 → v1a.1 → v1b.0.0.0 (etc.)
+- Règle : on n’incrémente que lorsqu’un fichier est réellement modifié
+- Convention :
+  - x.x.x.x → modif mineure
+  - x.x.x → modif stabilisée
+  - x.x → changement de valeur/fonction
+  - x → refonte majeure
+
+-------------------------------------------------------
+
+[✓] v1a.0.0.0 – Base
+- Structure simplyv1 (#hd, #mn, #ct, #ft)
+- index.html, style.css, option.css, script.js, readme.txt
+
+[✓] v1a.0.0.1 – Structure étendue
+- Pages HTML : hexekta.html, art.html, labs.html, mint.html, trade.html, roadmap.html, faq.html, news.html
+- structure.json + readme.txt mis à jour
+
+-------------------------------------------------------
+
+ToDo pour v1a.0.0.2 et suivants :
+
+1. Intégration de contenu
+- [ ] roadmap.html : étapes et jalons
+- [ ] faq.html : questions/réponses
+- [ ] news.html : blocs datés d’actualités
+- [ ] labs.html : texte sur les collections à venir
+- [ ] contact.html : page à créer (manquante)
+
+2. Fonctionnalités JavaScript
+- [ ] Navigation par hash (window.location.hash)
+- [ ] Lazy loading de data.json et col.json
+- [ ] Génération dynamique des artefacts et collections
+
+3. JSON
+- [ ] Compléter data.json (artefacts Hexekta)
+- [ ] Compléter col.json (collections NFT DigiRelik)
+
+4. Interface
+- [ ] Ajout de liens internes (navigation croisée)
+- [ ] Affichage du logo (logo_digirelik.svg)
+
+5. Structure et organisation
+- [ ] Créer dossiers : /assets/artefacts/, /assets/collections/, /archive/zip/
+- [ ] Ajouter images : DigiRelik.png, DigiRelik.jpg, logo_digirelik.svg
+
+[✓] v1a.0.0.2 – Intégration de contenu
+- Contenus injectés dans toutes les pages HTML (hexekta, labs, art, roadmap, faq, news, mint, trade)
+- Liens textuels internes ajoutés entre les pages
+
+[✓] v1a.0.0.3 – JSON + navigation JS
+- [x] Généré data.json avec 14 artefacts
+- [x] Généré col.json avec 5 collections
+- [x] script.js avec support window.location.hash
