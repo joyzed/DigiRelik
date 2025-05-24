@@ -1,36 +1,33 @@
-DigiRelik – Version 1.0.1.1
+DigiRelik – Version 1.0.1.2
 ===========================
 
-Date : 24/05/2025 14:34:26
+Date : 24/05/2025 15:21:31
 
-Objectifs :
-- Vérification et uniformisation du menu sur toutes les pages
-- Centralisation et nettoyage complet du fichier option.css
-- Réorganisation logique et cohérente des styles
-- Suppression du menu uniquement dans art.html comme convenu
-- Ajout de la page labs.html au sous-menu "Projet"
-- Chargement systématique des feuilles de styles nécessaires
+Modifications apportées :
 
-Pages avec menu :
-- Toutes les pages sauf art.html
-- Menu unifié avec classes .menu-list et .submenu
-- Chargement de option.css pour le style des menus
+1. Reformatage complet de mint.html
+   - Reprise du head, menu, footer depuis index.html
+   - Conservation du <main> original
+   - Nettoyage et conformité avec l’ossature standard
 
-Page sans menu :
-- art.html (menu entièrement supprimé, aucune dépendance active)
+2. Centralisation du JavaScript :
+   - Déplacement de la fonction showSection() dans script.js
+   - Suppression des balises <script> inline dans index.html et test.html
 
-Fichiers CSS :
-- style.css (inchangé)
-- option.css (corrigé et réorganisé)
+3. Mise à jour des liens du menu :
+   - Liens du menu désormais fonctionnels (vers index.html, about.html, contact.html, etc.)
+   - Menu uniformisé sur toutes les pages (sauf art.html)
 
-Fichiers JS :
-- script.js (inchangé)
+4. Nettoyage :
+   - Suppression du fichier style.csd
+   - Aucune création ou utilisation de PHP (mint.php supprimé)
 
-Fichiers de contenu :
-- data.json (inchangé)
+Fichiers modifiés dans cette version :
+- index.html
+- mint.html
+- test.html
+- script.js
+- readme.txt
 
-Nouvelle page :
-- labs.html
-
-Version précédente : v1.0.1
-Version actuelle : v1.0.1.1
+Version précédente : v1.0.1.1
+Version actuelle : v1.0.1.2
