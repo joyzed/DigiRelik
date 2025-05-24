@@ -1,15 +1,26 @@
-<!-- projet.html – v1.0.0 – 24/05/2025 12:01:18 – Version initiale drk_main -->
+<!-- projet.html – v1.0.1 – 24/05/2025 13:00:07 – Uniformisation ossature (menu + footer) -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DigiRelik – Projet</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DigiRelik – Accueil</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="option.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
+<header>
+    <h1 class="site-title">DigiRelik</h1>
+    <nav class="menu">
+      <div class="menu-box" onclick="showSection('home')">Accueil</div>
+      <div class="menu-box" onclick="showSection('project')">Projet</div>
+      <div class="menu-box" onclick="showSection('about')">À propos</div>
+      <div class="menu-box" onclick="showSection('contact')">Contact</div>
+    </nav>
+  </header>
+
+<header>
     <h1 class="site-title">DigiRelik</h1>
     <nav class="menu">
       <a href="index.html" class="menu-link">Home</a>
@@ -30,5 +41,9 @@
     </section>
   </main>
   <script src="script.js"></script>
+
+<footer>
+    <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
+  </footer>
 </body>
 </html>
