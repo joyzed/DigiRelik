@@ -1,24 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hexekta – Artefacts</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hexekta – Galerie</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="option.css">
 </head>
 <body>
   <header>
-    <h1>Hexekta – Artefacts</h1>
-    <p>Une production <strong>DigiRelik</strong></p>
+    <h1 class="site-title">DigiRelik</h1>
+    <nav class="menu">
+      <div class="menu-box active" data-section="gallery">Galerie</div>
+      <div class="menu-box" data-section="about">À propos</div>
+      <div class="menu-box" data-section="contact">Contact</div>
+      <div class="menu-box" data-section="retour"><a href="index.html" style="color:inherit;text-decoration:none;">Accueil</a></div>
+    </nav>
   </header>
-
-  <main id="artefacts-container">
-    <!-- La liste des artefacts sera injectée ici par script.js -->
+  <main>
+    <section id="gallery" class="section active">
+      <h2>Les artefacts du futur ont une mémoire</h2>
+      <div id="hexekta-gallery" class="artifact-grid">
+        <p>Chargement des artefacts...</p>
+      </div>
+    </section>
+    <section id="about" class="section">
+      <h2>À propos de la collection</h2>
+      <p>Hexekta, c’est la fusion de la mémoire digitale et du symbolisme fractal. Chaque artefact est unique, issu d’un univers cybernétique inspiré.</p>
+    </section>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Contactez l’équipe DigiRelik pour tout partenariat ou question autour de la collection Hexekta.</p>
+    </section>
+    <section id="retour" class="section">
+      <p><a href="index.html">← Retour à l’accueil DigiRelik</a></p>
+    </section>
   </main>
-
   <footer>
-    <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
+    <p>&copy; 2025 DigiRelik – Hexekta</p>
   </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.menu-box').forEach(box => {
+        box.addEventListener('click', function() {
+          document.querySelectorAll('.menu-box').forEach(b => b.classList.remove('active'));
+          document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+          this.classList.add('active');
+          document.getElementById(this.dataset.section).classList.add('active');
+        });
+      });
+      // Galerie dynamique
+      fetch('data.json')
+        .then(res => res.json())
+        .then(data => {
+          const gallery = document.getElementById('hexekta-gallery');
+          gallery.innerHTML = '';
+          data.forEach((item, index) => {
+            const id = index + 1;
+            const element = document.createElement('div');
+            element.className = 'artifact-box';
+            element.innerHTML = `
+              <h3><a href="art.html?id=${id}">${item.nom}</a></h3>
+              <p>${item.description}</p>
+            `;
+            gallery.appendChild(element);
+          });
+        });
+    });
+  </script>
 </body>
 </html>
