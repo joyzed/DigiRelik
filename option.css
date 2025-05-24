@@ -1,4 +1,4 @@
-/* Base visuelle DigiRelik – Complément CSS */
+/* Complément visuel DigiRelik – V1.1 */
 
 body {
   background-color: #0a0a0a;
@@ -22,43 +22,70 @@ h1 {
   margin: 0;
 }
 
+footer .prod {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #00ffffaa;
+}
+
 /* Galerie (hexekta) */
-.grid-container {
+.grid-2block {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
   padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .artefact-card {
-  background-color: #141414;
-  border: 1px solid #00aaff;
-  padding: 1rem;
-  border-radius: 12px;
+  background-color: #101010;
+  border: 1px solid #00ffffaa;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00ffff33;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  box-shadow: 0 0 12px #00ffff33;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .artefact-card:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 18px #00ffff88;
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #00ffff88;
+}
+
+.artefact-card img {
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .artefact-card h2 {
-  font-size: 1.2rem;
-  color: #00f0ff;
+  font-size: 1.4rem;
+  color: #00ffff;
+  margin-bottom: 0.5rem;
 }
 
-.artefact-img {
-  width: 100%;
-  max-height: 200px;
-  object-fit: contain;
-  border-radius: 8px;
-  margin-bottom: 0.7rem;
+.artefact-card p {
+  color: #ccf8ff;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
 }
 
-/* Page individuelle (art.html) */
+.artefact-card a {
+  color: #00ffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Fiche artefact (art.html) */
 .artefact-container {
   max-width: 850px;
   margin: auto;
@@ -66,12 +93,17 @@ h1 {
   background: #111;
   border-radius: 14px;
   box-shadow: 0 0 20px #00ffff44;
+  text-align: center;
 }
 
 .artefact-img-large {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1.5rem;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto 1.5rem;
+  display: block;
 }
 
 .actions {
@@ -96,4 +128,12 @@ h1 {
   background-color: #00cccc;
 }
 
-.ipfs
+.ipfs-qr {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.ipfs-qr img {
+  margin-top: 0.5rem;
+  border-radius: 6px;
+}
