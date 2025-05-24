@@ -1,4 +1,4 @@
-/* Complément visuel DigiRelik – V1.1 */
+/* Complément CSS DigiRelik – V1.1 */
 
 body {
   background-color: #0a0a0a;
@@ -29,7 +29,8 @@ footer .prod {
   color: #00ffffaa;
 }
 
-/* Galerie (hexekta) */
+/* Galerie : hexekta.html */
+
 .grid-2block {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -79,21 +80,39 @@ footer .prod {
   margin-bottom: 1rem;
 }
 
-.artefact-card a {
+.artefact-card a.lien-artefact {
   color: #00ffff;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
+  margin-top: 1rem;
 }
 
-/* Fiche artefact (art.html) */
+.artefact-card a.lien-artefact:hover {
+  text-decoration: underline;
+  color: #00cccc;
+}
+
+/* Fiche individuelle : art.html */
+
 .artefact-container {
   max-width: 850px;
   margin: auto;
   padding: 2rem;
   background: #111;
-  border-radius: 14px;
-  box-shadow: 0 0 20px #00ffff44;
-  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffff55;
+  text-align: right;
+  border: 1px solid #00ffff55;
+}
+
+.artefact-container p {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  color: #d0faff;
+}
+
+.artefact-container p strong {
+  color: #00ffff;
 }
 
 .artefact-img-large {
@@ -109,9 +128,9 @@ footer .prod {
 .actions {
   margin: 2rem 0 1rem;
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .btn {
@@ -122,6 +141,9 @@ footer .prod {
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  min-width: 200px;
 }
 
 .btn:hover {
@@ -130,7 +152,7 @@ footer .prod {
 
 .ipfs-qr {
   margin-top: 2rem;
-  text-align: center;
+  text-align: right;
 }
 
 .ipfs-qr img {
