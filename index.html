@@ -1,1 +1,114 @@
-<!-- Placeholder index.html -->
+<!-- index.html – v2.0.4 – 2025-05-24 – Ajout lien trade, version-tag supprimée -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DigiRelik – Accueil</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="option.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="site-title">DigiRelik</h1>
+    <nav class="menu">
+      <div class="menu-box" onclick="showSection('home')">Accueil</div>
+      <div class="menu-box" onclick="showSection('project')">Projet</div>
+      <div class="menu-box" onclick="showSection('about')">À propos</div>
+      <div class="menu-box" onclick="showSection('contact')">Contact</div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section active">
+      <h2>DigiRelik</h2>
+      <p class="slogan">Les artefacts du futur ont une mémoire.</p>
+
+      <p>
+        Bienvenue dans un espace où la mémoire numérique devient tangible.  
+        DigiRelik est un projet né de l’alliance entre narration, art cybernétique et technologie blockchain.  
+        Chaque artefact que nous conservons est un fragment d’univers codé, un témoin fictif d’un passé oublié ou d’un avenir possible.
+      </p>
+
+      <p>
+        Nos objets ne sont pas seulement visuels. Ils sont conçus comme des porteurs de sens, de récits, de structures symboliques.  
+        À travers la série <strong>Hexekta</strong>, nous interrogeons les notions d’identité, de mémoire, d’oubli, et de transmission.  
+        Chaque artefact est minté sur la blockchain <strong>eCash (XEC)</strong> et certifié sur <strong>DigiByte (DGB)</strong> pour garantir son unicité, son authenticité, et sa traçabilité.
+      </p>
+
+      <p>
+        Vous pouvez <a href="mint.html" class="cta-link">minter un artefact</a>, en apprendre plus sur notre <a href="drk.html" class="cta-link">token DRK</a>, consulter notre <a href="faq.html" class="cta-link">FAQ</a>, explorer notre <a href="roadmap.html" class="cta-link">feuille de route</a>, ou suivre les <a href="trade.html" class="cta-link">cours du marché</a>.
+      </p>
+
+      <p>
+        Nous croyons en une esthétique minimale, lisible, accessible.  
+        La simplicité du code n’empêche pas la densité de sens.
+      </p>
+
+      <p>
+        Vous êtes ici pour explorer ce que l’humanité pourrait vouloir transmettre quand elle ne sera plus là.
+      </p>
+
+      <p>
+        <a href="hexekta.html" class="cta-link">→ Accéder à la collection Hexekta</a>
+      </p>
+    </section>
+
+    <section id="project" class="section">
+      <h2>Projet Hexekta</h2>
+      <p>Hexekta est une galerie d'artefacts NFT interconnectés, chacun lié à une mémoire, un pouvoir et un récit encodé.</p>
+      <iframe src="hexekta.html" width="100%" height="400" title="Hexekta"></iframe>
+    </section>
+
+    <section id="about" class="section">
+      <h2>À propos</h2>
+
+      <p>
+        DigiRelik est un projet indépendant né de la volonté de documenter l’intangible, d’encoder la mémoire dans le code,  
+        et d’archiver le mythe dans la matière numérique.  
+        Nous croyons que les artefacts ne se limitent pas à l’art visuel ou aux objets de collection : ce sont des fragments codés de conscience.
+      </p>
+
+      <p>
+        Chaque artefact hébergé par DigiRelik est pensé comme une relique fictionnelle, un vestige d’une réalité parallèle,  
+        une pièce d’un puzzle narratif plus vaste.  
+        Nous n’archivons pas des images, mais des idées : des traces d’humanité, réimaginées et encapsulées dans la technologie.
+      </p>
+
+      <p>
+        Le projet repose sur trois piliers :  
+        <strong>symbolisme, interconnexion, pérennité</strong>.  
+        Nous utilisons les blockchains <strong>eCash</strong> et <strong>DigiByte</strong> non pour suivre une mode, mais pour inscrire durablement ces objets dans un registre que personne ne pourra altérer.
+      </p>
+
+      <p>
+        DigiRelik est un pont : entre le passé et le futur, entre l’art et l’algorithme, entre la mémoire et la mutation.  
+        Il est ouvert à celles et ceux qui veulent explorer, transmettre, ou simplement contempler.
+      </p>
+
+      <blockquote>
+        “Ce qui n’est pas raconté disparaît. Ce qui est codé survit.”
+      </blockquote>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Pour nous contacter : jyc.joyz@gmail.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DigiRelik – Tous droits réservés</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
