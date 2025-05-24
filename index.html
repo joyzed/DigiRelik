@@ -10,7 +10,8 @@
       background: #0a0a0a;
       color: #00ffff;
       font-family: 'Orbitron', sans-serif;
-      margin: 0; padding: 20px;
+      margin: 0;
+      padding: 20px;
     }
     header {
       text-align: center;
@@ -46,11 +47,22 @@
       margin-bottom: 15px;
       color: #00ffff;
     }
+    #projet iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      border-radius: 8px;
+    }
     footer {
       text-align: center;
       margin-top: 40px;
       font-size: 0.9rem;
       color: #005555;
+    }
+    @media (max-width: 700px) {
+      #projet iframe {
+        height: 500px;
+      }
     }
   </style>
 </head>
@@ -61,6 +73,7 @@
     <nav>
       <a href="#accueil">Accueil</a>
       <a href="#apropos">À propos</a>
+      <a href="#projet">Projet</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -73,6 +86,16 @@
   <section id="apropos">
     <h2>À propos</h2>
     <p>Hexekta est une collection d’artefacts cybernétiques, chacun porteur d’une mémoire, d’un pouvoir, et d’une histoire. Notre objectif est de fusionner art, technologie et mysticisme.</p>
+  </section>
+
+  <section id="projet">
+    <h2>Projet Hexekta</h2>
+    <iframe
+      src="hexekta.html"
+      title="Galerie Hexekta"
+      loading="lazy"
+      sandbox="allow-scripts allow-same-origin allow-popups"
+    ></iframe>
   </section>
 
   <section id="contact">
