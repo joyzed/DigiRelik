@@ -28,38 +28,6 @@
   <footer>
     <p>&copy; 2025 DigiRelik – Hexekta</p>
   </footer>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('.menu-box').forEach(box => {
-        box.addEventListener('click', function() {
-          document.querySelectorAll('.menu-box').forEach(b => b.classList.remove('active'));
-          document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-          this.classList.add('active');
-          document.getElementById(this.dataset.section).classList.add('active');
-        });
-      });
-      // Chargement dynamique de l'artefact
-      const params = new URLSearchParams(window.location.search);
-      const id = parseInt(params.get('id'));
-      fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-          const artifact = data[id - 1];
-          const container = document.getElementById('artifact-detail');
-          if (!artifact) {
-            container.innerHTML = '<p>Artefact non trouvé.</p>';
-            return;
-          }
-          container.innerHTML = `
-            <h2>Artefact ${id} : ${artifact.nom}</h2>
-            <img src="artefact${id}.jpg" alt="Artefact ${id}" class="artifact-image">
-            <p>${artifact.description}</p>
-          `;
-        })
-        .catch(error => {
-          document.getElementById('artifact-detail').innerHTML = '<p>Erreur lors du chargement des données.</p>';
-        });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
